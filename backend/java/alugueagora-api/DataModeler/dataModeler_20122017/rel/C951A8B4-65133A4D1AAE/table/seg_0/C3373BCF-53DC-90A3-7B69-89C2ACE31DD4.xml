@@ -1,0 +1,359 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C3373BCF-53DC-90A3-7B69-89C2ACE31DD4" name="IMOVEL">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>8DF7C495-5248-36E5-F3CE-9CCE8B1FF6E9</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoImovel" id="2408FD96-A349-DF22-F4B8-04FDD3D43571">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>BF34F1D8-0C96-91D4-37C9-D8EE86D4701B</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricaoImovel" id="9476C358-774C-E84A-0F4B-0AE7B4D64069">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>FF1E332B-A1A2-6FDF-84A9-BC63A2157F4F</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone1" id="DC17A477-9916-A040-5D96-CDF53642F3B6">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>AAC7E53C-B267-BAA5-51FF-AD38ED9F52A2</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone2" id="A1440EA7-A896-B246-99B7-766FECBD6FDA">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>214447B7-B14F-AC0E-E56E-A9D074D50A80</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="celular" id="80708289-6A6F-A1AD-B770-6765F6EF4045">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>7A11B19C-E494-AF8B-FE3E-455AFDD72F80</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="7656829F-B7CC-7521-61AB-5F4A458F7B72">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>761DED5C-852F-6877-3782-CD70E4500B34</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="areaImovel" id="89B46C77-4B90-B09F-F1C1-B53565D35883">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>8408FF0A-2174-CFD6-273C-F8399B2209D0</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantidadeDormitorios" id="7948D177-B87E-80F2-FD28-4A9D03230C44">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>832237AD-3DBB-B094-AAB8-C1E0D734588D</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantidadeBanheiros" id="DC07D16B-236F-5B1F-D3E6-84E1ACDD10F4">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>F6591ACB-1197-792F-BCBF-3968AA439740</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantidadeGaragem" id="562F31A2-0C82-69EA-61DD-87DF268397FD">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>6A5A3DB2-7A9D-4977-6EBE-CC124C322001</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="disponibilidade" id="E0113A97-8B4C-1C60-7C83-4D86A48CF4CB">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>FC660FB4-5D38-BE05-5503-0DE0FEFA13D4</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valorImovel" id="FD8D9E80-678C-4C5F-B1BF-566F8E0F179E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>42D8A84D-7F4E-23E8-68E4-5DE4A18F11E3</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valorIptu" id="73C12840-58EB-D372-D995-110D64B1B908">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>43E1B801-CFEE-D0BA-22D0-5350944CC07C</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valorPacote" id="4C92362D-AD24-BB9A-33DF-4DDE00F2D36E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>88DA469B-0994-BDC6-1BA1-4E2BA76F2C26</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valorCondominio" id="39B3C981-DE5C-97E5-E504-4A26A40C1CD4">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>9C24D269-09F3-8D0E-D813-835410543FA4</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dataRegistro" id="0CB37D67-470F-6563-1AA7-FD4198F73D0F">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>A40ED15B-D8FA-ECF4-4885-18978571A43C</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="anuncio" id="66CEF905-48B8-74D5-7A77-81BFE609ED65">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>0A4B974E-0AE3-93BB-DB7A-FC210C3603B7</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oportunidade" id="9F1A0BD9-0F37-BD13-5CC5-784C402960F7">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>28E03EB1-ADA9-E769-7155-C6FA6DE576FB</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="anuncioDestaque" id="8ED56A6E-C2B4-B1FA-B899-6E0B3BF275FA">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>BEB16342-523A-00E0-EE69-3ACC8139B558</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="envioPlaca" id="2B490331-753E-852C-7496-2D6D5032D9B5">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>08033E54-C418-E5E5-5186-343FEA670AA8</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="preferido" id="93A1FBCF-45FF-B325-BC1F-BCF0CDFCC9E4">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>F4B2BE25-0F4E-32BC-1EA8-AB46FD31217D</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="I_NEGOCIO_codigoImovelNegocio" id="DDA2B03E-342B-0682-F88B-CEAEB18DB995">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:20:52 UTC</createdTime>
+<generatorID>7276E25C-DCAC-B42B-4C75-E413C6D85649</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA83911B-3C30-D4DF-FF68-A380474D73E4" referredColumn="9EEFAF89-226B-2FA9-ACCA-55DFFA11F776"/>
+</associations>
+</Column>
+<Column name="IMOVEL_TIPO_codigoTipoImovel" id="694654C8-E896-20AC-A98D-B2124EF5A44B">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:20:52 UTC</createdTime>
+<generatorID>7ED37198-C8B2-F2E0-7696-4A5BB414B6B8</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="64655D9C-55D7-53B1-A540-3AF2A5C8F454" referredColumn="2A4BA921-10D4-4410-52F0-E6C68788C665"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B7148A0-1C88-E28D-C913-34964E898E39" name="IMOVEL_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>42691DA2-4C9F-0F10-BA5A-ABAE4242D244</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2408FD96-A349-DF22-F4B8-04FDD3D43571"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A935FE0C-EBE6-057B-2449-B52502A663DC" name="IMOVEL__NEGOCIO_IDX">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:20:52 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>DBF137D2-995C-175E-79AA-3FC119FF2053</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="DDA2B03E-342B-0682-F88B-CEAEB18DB995"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F568F6D3-E860-CF2B-6980-AFA171489FC8" name="IMOVEL__TIPO_IDX">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:20:52 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>36C703F3-1D7E-8420-EE1C-FED7521DE625</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="694654C8-E896-20AC-A98D-B2124EF5A44B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3673D2C5-B3A7-9C09-3B1E-91EFC8CB9499" name="IMOVEL_IMOVEL_NEGOCIO_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:20:52 UTC</createdTime>
+<generatorID>DBF137D2-995C-175E-79AA-3FC119FF2053</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDA2B03E-342B-0682-F88B-CEAEB18DB995"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EBD23861-CDAC-1B3E-0887-BCE2E673B823" name="IMOVEL_IMOVEL_TIPO_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:20:52 UTC</createdTime>
+<generatorID>36C703F3-1D7E-8420-EE1C-FED7521DE625</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="694654C8-E896-20AC-A98D-B2124EF5A44B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

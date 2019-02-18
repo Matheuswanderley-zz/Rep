@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Imovel</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+			$(document).ready(function() {
+			$("#btnBuscar").click(function(){
+				$.ajax({
+					type: "GET",
+					//url: "http://localhost:8080/imovel/1398"
+					url: "http://apidev.a2f.com.br:8082/AlugueAgoraBackEnd-0.0.1-SNAPSHOT/imovel/"+$("#codigoImovel").val()
+				}).then(function(data) {
+				   $('#codigo_imovel').html("<b>"+data.codigoImovel+"</b>");
+				}).fail(function(jqXHR){
+			        if(jqXHR.status==400 || jqXHR.status==500 || jqXHR.status==0){
+			        	 $('#codigo_imovel').html("<b>Não encontrou.</b>");
+			        }
+			    });
+				
+			 });	
+			});
+			
+		</script>
+   		 </head>
+
+    <body>
+        <div>
+            <p>Codigo Imovel: <input type="text" id="codigoImovel" value=""></p>
+            <button id="btnBuscar">Buscar Imovel: </button>
+            <p id="codigo_imovel"></p>
+        </div>
+    </body>
+    
+</html>

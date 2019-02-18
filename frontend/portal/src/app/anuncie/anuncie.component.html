@@ -1,0 +1,494 @@
+<section class="container anuncie content-pages">
+
+  <div id="modal-retorno" class="modal" style="height: 22% !important;">
+    <div class="modal-content">
+      <div class="row">
+        <div class="input-field col s12">
+          <p>Seu imóvel foi cadastrado com sucesso. Em breve ele estará disponível em nosso portal.</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="/" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2 class="title">Anuncie sem pagar nada</h2>
+    </div>
+  </div>
+
+  <div class="row steps">
+    <div class="col s12 hr">
+      <hr />
+    </div>
+    <div class="col s2">
+      <span class="active" id="passo1_bullet">1</span>
+    </div>
+    <div class="col s2">
+      <span class="" id="passo2_bullet">2</span>
+    </div>
+    <div class="col s2">
+      <span class="" id="passo3_bullet">3</span>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col s12">
+
+
+      <form #f="ngForm" (ngSubmit)="Cadastrar(f.value)">
+
+        <div class="vender-alugar">
+
+          <p>
+            <button type="button" class="waves-effect waves-light btn active" [ngClass]="{'active': tipoAnuncio=='vender' || tipoAnuncio=='init'}" id="vender" name="vender" (click)="tipoAnuncio = 'vender'">Quero vender</button>
+          </p>
+          <p>
+            <button type="button" class="waves-effect waves-light btn active" [ngClass]="{'active': tipoAnuncio=='alugar' || tipoAnuncio=='init'}" id="alugar" name="alugar" (click)="tipoAnuncio = 'alugar'">Quero alugar</button>
+          </p>
+        </div>
+
+        <div id="passo1" [hidden]="show || (tipoAnuncio!='alugar' && tipoAnuncio!='vender')">
+
+          <div class="col s12">
+            <strong class="sub">Título do anúncio</strong>
+            <div class="input-field col s12">
+              <input id="tituloImovel" type="text" data-length="100"
+                     name="tituloImovel"
+                     [(ngModel)]="tituloImovel">
+            </div>
+          </div>
+
+          <div class="col s5 tipo" [ngClass]="{'disabled' : tipoAnuncio == 'alugar'}">
+            <input name="group1" type="radio" id="test1" checked="">
+            <label for="test1">Na planta</label>
+            <input name="group1" type="radio" id="test2" checked="">
+            <label for="test2">Pronto para morar</label>
+          </div>
+
+          <div class="input-field col s7">
+            <select name="tipoim" [(ngModel)]="tipoim">
+              <option value="" disabled selected>Tipo do Imóvel</option>
+              <option value="Casa">Casa</option>
+              <option value="Apartamento">Apartamento</option>
+              <option value="Lote">Lote</option>
+            </select>
+          </div>
+
+          <div class="row">
+
+            <div class="col s5">
+              <strong class="sub">Dados do Imóvel</strong>
+
+              <textarea  id="descricao" class="materialize-textarea" data-length="500" name="descricao" [(ngModel)]="descricao" ></textarea>
+              <label for="descricao">Descrição do Imóvel</label>
+            </div>
+
+            <div class="col s7">
+
+              <strong class="sub">Endereço</strong>
+
+              <div class="row">
+                <div class="input-field col s8">
+                  <input id="endereco" type="text"
+                         name="endereco"
+                         [(ngModel)]="endereco"
+                  >
+                  <label for="endereco">Rua/Av</label>
+                </div>
+
+                <div class="input-field col s2">
+                  <input id="numero" type="text"
+                         name="numero"
+                         [(ngModel)]="numero">
+                  <label for="numero">Num</label>
+                </div>
+
+                <div class="input-field col s2">
+                  <input id="complemento" type="text"
+                         name="complemento"
+                         [(ngModel)]="complemento">
+                  <label for="complemento">Compl</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s4">
+                  <input id="cidade" type="text"
+                         name="cidade"
+                         [(ngModel)]="cidade">
+                  <label for="cidade">Cidade</label>
+                </div>
+
+                <div class="input-field col s3">
+                  <input id="bairro" type="text"
+                         name="bairro"
+                         [(ngModel)]="bairro">
+                  <label for="bairro">Bairro</label>
+                </div>
+
+                <div class="input-field col s2">
+                  <input id="estado" type="text"
+                         name="estado"
+                         [(ngModel)]="estado">
+                  <label for="cep">Estado</label>
+                </div>
+
+                <div class="input-field col s3">
+                  <input id="cep" type="text"
+                         name="cep"
+                         [(ngModel)]="cep">
+                  <label for="cep">CEP</label>
+                </div>
+                <div class="col s12">
+                  <p>
+                    <input type="checkbox" id="test5" />
+                    <label for="test5">Não quero divulgar o endereço do imóvel. Fique tranquilo, o endereço não será divulgado neste site.</label>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+          <div class="row">
+
+            <div class="col s5">
+              <strong class="sub">Imagens do imóvel</strong>
+
+              <div class="row">
+                <div class="col s12">
+                  <div class="file-field input-field">
+                    <div class="btn">
+                      <span>Carregar</span>
+                      <input type="file" multiple>
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text" placeholder="Uma ou mais imagens">
+                    </div>
+                  </div>
+                  <div class="imagens">
+                    <span class="img-upload"></span>
+                    <span class="img-upload"></span>
+                    <span class="img-upload"></span>
+                    <span class="img-upload"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s1">
+            </div>
+
+            <div class="col s6">
+
+              <strong class="sub">Itens de Lazer</strong>
+
+              <div class="row">
+
+                <div class="col s12 m6">
+
+                  <p>
+
+                    <input type="checkbox" class="filled-in" id="piscina_a" name="piscinaa" [(ngModel)]="piscinaa" value="Piscina adulto" />
+                    <label for="piscina_a">Piscina adulto</label>
+                  </p>
+
+                  <p>
+
+                    <input type="checkbox" class="filled-in" id="piscina_i" name="piscinai" [(ngModel)]="piscinai" value="Piscina infantíl" />
+                    <label for="piscina_i">Piscina infantíl</label>
+                  </p>
+
+                  <p>
+
+                    <input
+                      type="checkbox"
+                      class="filled-in"
+                      id="salaoj"
+                      name="salaoj"
+                      [(ngModel)]="salaoj" value="Salão de Jogos"
+                    />
+                    <label for="salaoj">Salão de jogos</label>
+                  </p>
+
+                  <p>
+
+                    <input
+                      type="checkbox"
+                      class="filled-in"
+                      id="brinquedoteca"
+                      name="brinquedoteca"
+                      [(ngModel)]="brinquedoteca" value="Brinquedoteca"
+                    />
+                    <label for="brinquedoteca">Brinquedoteca</label>
+                  </p>
+
+
+                  <p>
+
+                    <input type="checkbox" class="filled-in" id="salao_f_a" name="salaofa" [(ngModel)]="salaofa" value="Salão de festas Adulto" />
+                    <label for="salao_f_a">Salão de Festas Adulto</label>
+                  </p>
+
+                  <p>
+
+                    <input type="checkbox" class="filled-in" id="salao_f_i" name="salaofi" [(ngModel)]="salaofi" value="Salão de festas infantíl" />
+                    <label for="salao_f_i">Salão de Festas Infantil</label>
+                  </p>
+
+                  <p>
+                    <input type="checkbox" class="filled-in" id="area_gourmet" name="area_gourmet" [(ngModel)]="area_gourmet" value="Área Gourmet" />
+                    <label for="area_gourmet">Área Gourmet</label>
+                  </p>
+
+                  <p>
+
+                    <input type="checkbox" class="filled-in" id="churrasqueira" name="churrasqueira" [(ngModel)]="churrasqueira" value="Churrasqueira" />
+                    <label for="churrasqueira">Churrasqueira</label>
+                  </p>
+
+                </div>
+
+
+                <div class="col s12 m6">
+
+                  <p>
+
+                    <input type="checkbox" class="filled-in" id="academia" name="academia" [(ngModel)]="academia" value="Academia" />
+                    <label for="academia">Academia</label>
+                  </p>
+
+                  <p>
+
+                    <input type="checkbox" class="filled-in" id="sauna" name="sauna" [(ngModel)]="sauna" value="Sauna"  />
+                    <label for="sauna">Sauna</label>
+                  </p>
+
+                  <p>
+
+                    <input type="checkbox" class="filled-in" id="escritorio" name="escritorio" [(ngModel)]="escritorio" value="Sauna" />
+                    <label for="escritorio">Escritório</label>
+                  </p>
+
+                  <p>
+
+                    <input type="checkbox" class="filled-in" id="playground" name="playground" [(ngModel)]="playground" value="Playground" />
+                    <label for="playground">Play Ground</label>
+                  </p>
+
+
+                  <p>
+
+                    <input type="checkbox" class="filled-in" id="a_verde" name="verde" [(ngModel)]="verde" value="Área Verde" />
+                    <label for="a_verde">Área Verde</label>
+                  </p>
+
+                  <p>
+
+                    <input type="checkbox" class="filled-in" id="lago" name="lago" [(ngModel)]="lago" value="Lago" />
+                    <label for="lago">Lago</label>
+                  </p>
+
+                  <p>
+
+                    <input type="checkbox" class="filled-in" id="a_pet" name="pet" [(ngModel)]="pet" value="Área Pet" />
+                    <label for="a_pet">Área Pet</label>
+                  </p>
+
+                  <p>
+
+                    <input type="checkbox" class="filled-in" id="a_fitness" name="fitness" [(ngModel)]="fitness" value="Área Fitness" />
+                    <label for="a_fitness">Área Fitness</label>
+                  </p>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+            <div class="col s12">
+
+              <div class="row">
+                <div class="col s5">
+                  <strong class="sub">Estrutura do imóvel</strong>
+
+                  <div class="row estrutura">
+
+                    <div class="input-field col s12 m6">
+                      <i class="fa fa-bed material-icons prefix" aria-hidden="true"></i>
+                      <div class="number-picker noselect"  name="quartos" id="quartos"></div>
+                      <label for="quartos">Quartos</label>
+                    </div>
+
+                    <div class="input-field col s12 m6">
+                      <i class="fa fa-bath material-icons prefix" aria-hidden="true"></i>
+                      <div class="number-picker noselect"  name="suites" id="suites"></div>
+                      <label for="suites">Suítes</label>
+                    </div>
+
+                    <div class="input-field col s12 m6">
+                      <i class="fa fa-shower material-icons prefix" aria-hidden="true"></i>
+                      <div class="number-picker noselect"  name="banheiros" id="banheiros"></div>
+                      <label for="banheiros">Banheiros</label>
+                    </div>
+
+                    <div class="input-field col s12 m6">
+                      <i class="fa fa-car material-icons prefix" aria-hidden="true"></i>
+                      <div class="number-picker noselect"  name="vagas" id="vagas"></div>
+                      <label for="vagas">Vagas</label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col s1">
+                </div>
+
+                <div class="col s6">
+                  <strong class="sub">Valores</strong>
+
+                  <div class="row">
+
+                    <div class="input-field col s12 m4">
+                      <input placeholder="" id="valorImovel" type="number" min="0" class="validate money" [(ngModel)]="valorImovel" name="valorImovel">
+                      <label [hidden]="tipoAnuncio == 'vender'" for="valorImovel">Valor do Aluguel</label>
+                      <label [hidden]="tipoAnuncio == 'alugar'" for="valorImovel">Valor do Imóvel</label>
+                      <p class="real">R$</p>
+                    </div>
+
+                    <div class="input-field col s12 m4">
+                      <input placeholder="" id="condominio" type="number" min="0"  class="validate money" [(ngModel)]="valorCondominio" name="condominio">
+                      <label for="condominio">Condomínio</label>
+                      <p class="real">R$</p>
+                    </div>
+
+                    <div class="input-field col s12 m4">
+                      <input placeholder="" id="iptu" type="number" min="0" class="validate money" [(ngModel)]="valorIptu" name="iptu">
+                      <label for="iptu">IPTU</label>
+                      <p class="real">R$</p>
+                    </div>
+
+                    <div [hidden]="tipoAnuncio == 'vender'">
+                      <div class="col s12 m6 camposAluguel">
+                        <input name="incluir" type="checkbox" class="filled-in" id="condominio_i" [(ngModel)]="condominio_incluso" name="condominio_incluso" />
+                        <label for="condominio_i">Condomínio incluso</label>
+                      </div>
+                      <div class="col s12 m6 camposAluguel">
+                        <input name="incluir" type="checkbox" class="filled-in" id="iptu_i" [(ngModel)]="iptu_incluso" name="iptu_incluso" />
+                        <label for="iptu_i">IPTU Incluso</label>
+                      </div>
+                      <div class="col s12 m12 camposAluguel">
+                        <input placeholder="" id="aluguel_total" type="number" class="validate money" [(ngModel)]="aluguel_total" name="aluguel_total" value="{{getSum()}}">
+                        <label for="aluguel_total">Valor total do aluguel</label>
+                        <p class="real">R$</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <br><br>
+
+              <div class="row">
+                <div class="col s8">
+                  <p>
+                    <a href="" class="termos">Termos de Uso</a>
+                  </p>
+
+                </div>
+                <div class="col s4">
+                  <!--<p><a class="waves-effect waves-light btn-large btn-send right" routerLink="/anuncie2"><i class="material-icons left">arrow_forward</i>Prosseguir</a></p>-->
+                  <p><span class="waves-effect waves-light btn-large btn-send right" (click)="Next()"><i class="material-icons left">arrow_forward</i>Prosseguir</span></p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <div id="passo2" [hidden]="!show">
+
+
+
+          <div class="row">
+            <div class="col s4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="assets/images/4af4aae0740ba332f2576ebd38ccc612.97.jpg">
+                  <span class="card-title">Anúncio Grátis</span>
+                </div>
+                <div class="card-content">
+                  <p>Anuncie gratuitamente para milhares de corretores e associados de todo o Brasil</p>
+                </div>
+                <div class="card-action">
+                  <p class="">
+                    <input name="group2" type="radio" id="test3" checked="">
+                    <label for="test3">Grátis</label>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col s4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="assets/images/4af4aae0740ba332f2576ebd38ccc612.14.jpg">
+                  <span class="card-title">DESTAQUE<br>R$ 79,90</span>
+                </div>
+                <div class="card-content">
+                  <p>Anuncie online permitindo que todos possam encontrar seu anuncio em nosso destaque</p>
+                </div>
+                <div class="card-action">
+                  <p class="center">
+                    <input name="group2" type="radio" id="test4" checked="">
+                    <label for="test4">R$ 79,90</label>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-field col s4">
+              <div class="placa-adesiva">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                <img src="assets/images/simulacao_placa_adesiva.jpg">
+                <p>Placa Adesiva</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <p><button type="submit" class="waves-effect waves-light btn-large btn-send right " ><i class="material-icons left">arrow_forward</i>Prosseguir</button></p>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+      </form>
+
+    </div>
+  </div>
+
+
+</section>

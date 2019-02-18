@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A2B43FCF-DBB0-F119-7DB9-12868C9DB9F4" containerWithKeyObject="454B80AC-4F6E-9527-6EC7-D84A65DC7C79" localFKIndex="3E33DF4D-D346-25F5-9FEA-5B366162EA7B" name="IMOVEL_CARACTERISTICAS_CARACTERISTICAS_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 01:26:54 UTC</createdTime>
+<generatorID>3622060D-B74C-F494-1B8F-3984E20A73A0</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<referredTableLongName>CARACTERISTICAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A26AC90A-98D3-D8B4-172F-4D08C62D83B9</referredTableID>
+<keyObject>BB56F858-29AA-7C01-186D-751603F93976</keyObject>
+<referredKeyID>BB56F858-29AA-7C01-186D-751603F93976</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoCaracteristicas</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

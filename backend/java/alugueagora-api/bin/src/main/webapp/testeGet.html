@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teste 3651</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+			$(document).ready(function() {
+				$.ajax({
+					type: "GET",
+					//url: "http://localhost:8080/imovel/imovel/1003"
+					url: "http://apidev.a2f.com.br:8082/WaledBackEnd-0.0.1-SNAPSHOT/imovel/imovel/1000"
+				}).then(function(data) {
+				   $('.codigo_imovel').append(data.codigoImovel);
+				});
+			});
+			
+		</script>
+   		 </head>
+
+    <body>
+        <div>
+            <p class="codigo_imovel">Codigo Imovel </p>
+        </div>
+    </body>
+    
+</html>

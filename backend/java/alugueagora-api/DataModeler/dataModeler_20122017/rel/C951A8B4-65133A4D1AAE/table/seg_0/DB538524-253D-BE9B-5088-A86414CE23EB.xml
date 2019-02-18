@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB538524-253D-BE9B-5088-A86414CE23EB" name="IMOVEL_TIPO">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>5F41FA83-712E-8C58-935A-466DDAFBC470</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoTipoImovel" id="2A4BA921-10D4-4410-52F0-E6C68788C665">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>34F10029-59EB-A98C-959D-B3816499F1EA</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor" id="219159D3-B6BB-E371-8618-ED29960DD51E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>72377210-9192-6D36-33CA-76950B412719</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_codigoTipo" id="28F3AD61-2D57-7131-A2EE-588C444239D5">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 01:26:54 UTC</createdTime>
+<generatorID>C517D393-88B8-3691-D7FE-10439DC25838</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A321CC94-1BC6-8417-BF5E-BDB3CF2927CE" referredColumn="BA0672F7-B4E4-5D5D-F490-EE0EA1FE93F0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2EB812C5-0B72-6078-D9FB-5F03FAA6671C" name="IMOVEL_TIPO_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>8D159E79-2C33-7BEB-5708-770DC4E0DF59</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A4BA921-10D4-4410-52F0-E6C68788C665"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9D09F51-8087-260A-4269-84A2924CC1E1" name="IMOVEL_TIPO__IDX">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 01:26:54 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8B9A288B-6B2B-C783-5521-76B0762B6A24</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="28F3AD61-2D57-7131-A2EE-588C444239D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1650772-9574-DBE9-B163-507B1B92038F" name="IMOVEL_TIPO_TIPO_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 01:26:54 UTC</createdTime>
+<generatorID>8B9A288B-6B2B-C783-5521-76B0762B6A24</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28F3AD61-2D57-7131-A2EE-588C444239D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

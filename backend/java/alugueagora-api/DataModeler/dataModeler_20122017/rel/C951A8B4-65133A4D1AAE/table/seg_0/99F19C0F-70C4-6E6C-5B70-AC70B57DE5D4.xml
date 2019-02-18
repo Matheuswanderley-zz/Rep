@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99F19C0F-70C4-6E6C-5B70-AC70B57DE5D4" name="IMOVEL_ENDERECO">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>C020E544-3FBD-C376-82A4-9E26C9C028B1</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoEndereco" id="35C17356-677F-0686-9893-D3583BD1A638">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>26A1F720-5715-DBE2-D823-87501BB08B1B</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pais" id="0A86EF49-ED28-E031-2792-DC461C1E40C7">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>A2E42308-DACE-743B-58C0-96529425835D</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="regiao" id="2344F1CC-26F3-E390-FAA3-CF5895D22248">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>F47FFF49-E2F4-8E45-1349-D92D32511F00</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="34B95009-FF11-830F-DB63-EDD481067AD0">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>2066EF83-8356-C15E-BB45-9BC30C8D6988</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cidade" id="CE5B4908-ADBA-0B4F-9FC6-ADBE504603FE">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>42A044C1-1671-38DE-CA06-9326C0FA5C37</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bairro" id="FAE5E09D-DFDA-0970-902E-E8DE7B29A6AE">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>753EC1E4-7ADF-8BC6-6C1A-FE5564BC74F8</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipoLogradouro" id="7B9613D4-5B09-182D-3CA4-6AAE9FBBDCBC">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>122A553B-00DE-E3A8-EA85-526A811188D3</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="logradouro" id="ED47CEA0-09B2-71C3-65E8-FE2BC697BE6E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>F404F06D-66A5-9882-CF17-F6CF0140006D</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero" id="008A32B5-F8D6-D70C-D6B0-8C3F996F1CF6">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>A2EE8702-8029-6DDD-22D3-F6B8A2D3928D</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="complemento" id="E9AC574B-DD89-5144-5E6E-6EEC1F84BCCB">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>E88CBBC3-BEF0-6507-050C-9B54136015E0</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cep" id="8305C8D1-66CF-EF83-D10B-01AFEFEF017E">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>6F235774-64AB-95DF-A421-55B73099C07B</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMOVEL_codigoImovel" id="72222303-2B38-7AE6-CFB6-17FAF235D9D1">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:20:52 UTC</createdTime>
+<generatorID>ED8C533F-448F-25EE-9BC1-544BDFBB6094</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47A839FE-92EF-A23E-EBFF-1D2CEE2D36DF" referredColumn="2408FD96-A349-DF22-F4B8-04FDD3D43571"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="63E9593E-D39F-6139-0360-0CAFE78F7287" name="IMOVEL_ENDERECO_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>F4EBD001-B647-A64E-224B-9D0261D0A59B</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35C17356-677F-0686-9893-D3583BD1A638"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B989DAAB-A936-8A21-02A8-909F224B7B5A" name="IMOVEL_ENDERECO_IMOVEL_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:20:52 UTC</createdTime>
+<generatorID>16EB09A3-993E-399E-D3BD-A077461B1D53</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72222303-2B38-7AE6-CFB6-17FAF235D9D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

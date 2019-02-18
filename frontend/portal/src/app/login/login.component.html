@@ -1,0 +1,90 @@
+<section class="container login content-pages">
+
+
+  <div id="modal-senha" class="modal">
+    <div class="modal-content">
+      <h4 class="title">Para continuar, insira seu e-mail e escolha uma senha:</h4>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <input id="nome" type="text" class="">
+              <label for="nome">Nome</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <input id="email" type="email" class="">
+              <label for="email"  class="">E-mail</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="passwordNewuser" type="passwordNewuser" class="validate">
+              <label for="passwordNewuser">Senha</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="passwordNewuserConf" type="passwordNewuserConf" class="validate">
+              <label for="passwordNewuserConf">Confirme sua senha</label>
+            </div>
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="modal-action modal-close waves-effect waves-green btn-flat">Voltar</button>
+      <a href="/anuncie" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 center-align">
+      <h2 class="title">Acesse sua conta:</h2>
+      <button class="waves-effect waves-light btn modal-trigger" data-target="modal-senha">Sou novo aqui</button>
+
+      <h2 class="title" style="margin-top: 40px;margin-bottom: 0px;">ou</h2>
+
+    </div>
+  </div>
+
+
+  <form class="row form-login"  >
+
+    <div class="input-field col s6 force-center">
+      <div class="input-field col s12">
+        <h2 class="form-title"><i class="material-icons left">person</i>Já tenho conta</h2>
+      </div>
+      <div class="input-field col s12">
+        <input placeholder="" id="login" type="text" class="">
+        <label for="login" class="" id="loginLabel">Login</label>
+      </div>
+
+      <div class="input-field col s12">
+        <input placeholder="" id="password" type="password" class="">
+        <label for="password" id="passwordLabel"  class="">Senha</label>
+      </div>
+
+      <div class="input-field col s12">
+        <a href="#" class="left esqueci-senha">Esqueci meu usuário ou senha</a>
+        <button class="right waves-effect waves-light btn" routerLink="/anuncie">Entrar</button>
+      </div>
+
+
+      <div class="social">
+        <div class="input-field col s6">
+          <a class="waves-effect waves-light btn social facebook">
+            <i class="fa fa-facebook"></i> Login com Facebook</a>
+        </div>
+        <div class="input-field col s6">
+        <a class="waves-effect waves-light btn social twitter">
+          <i class="fa fa-twitter"></i> Login com Twitter</a>
+        </div>
+    </div>
+    </div>
+
+
+
+  </form>
+
+</section>

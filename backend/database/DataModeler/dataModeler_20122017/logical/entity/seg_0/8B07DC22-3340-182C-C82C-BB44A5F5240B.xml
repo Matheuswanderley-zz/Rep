@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8B07DC22-3340-182C-C82C-BB44A5F5240B" name="IMOVEL_PAGAMENTO">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-13 01:07:16 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigoPagamento" id="935A2BF1-B9B6-E296-DAA1-448F0EB8D147">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-13 01:09:29 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valorPagamento" id="FF79B8D1-DACB-1CC0-938D-7966147DDEA1">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-13 01:10:02 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dataPagamento" id="8EF8F2DC-60E7-5E91-5387-32B563770D6C">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-13 01:10:22 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="statusPagamento" id="54CA8C38-873E-B7ED-3E15-9A3D7C7B579C">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-13 01:10:35 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoImovel" id="3421CC45-D008-CBFC-AAFB-6A1008075C06">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:19:24 UTC</createdTime>
+<generatorID>FCA83B11-B4A6-3319-8F4A-14D205991F28</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<referedAttribute>BF34F1D8-0C96-91D4-37C9-D8EE86D4701B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="251CA7FB-AF49-216D-21D6-FC2785510859" name="IMOVEL_PAGAMENTO PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-13 05:32:57 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>935A2BF1-B9B6-E296-DAA1-448F0EB8D147</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

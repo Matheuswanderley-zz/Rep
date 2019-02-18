@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DFF14FBE-F63C-A3F4-C3E6-D359DF071BD9" containerWithKeyObject="8281F5F6-9EF3-C418-A377-3962C3A1019D" localFKIndex="79BEFFE0-06A1-F0A9-9E5E-763F8DB80D66" name="IMOVEL_AREA_COMUM_AREA_COMUM_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 01:26:54 UTC</createdTime>
+<generatorID>B554553B-37A8-540F-A25B-8A2AC95CE1C8</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<referredTableLongName>AREA_COMUM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>20FD8C6F-C0B8-9F86-757F-4C28AA828AC0</referredTableID>
+<keyObject>E6504EA1-581C-BFC8-0CED-A9C37AEACD88</keyObject>
+<referredKeyID>E6504EA1-581C-BFC8-0CED-A9C37AEACD88</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoAreaComum</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

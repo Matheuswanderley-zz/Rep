@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Alugue Agora</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <div id="banner">
+        <div class="container-fluid header-nav">
+            <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #006400;height:  37px;">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" style=" margin-right: -62px;">
+                        <li class="nav-item dropdown" style="color: white;height:  37px;margin-left: 20px;font-family: 'Open Sans', sans-serif;">
+                            <a class="nav-link dropdown-toggle" style="padding-right:  1em;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user" aria-hidden="true" style="color: white"></i>
+                                                    Dicas
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">
+                                <i class="fa fa-check" aria-hidden="true"></i>&nbsp; Conheça nosso site</a>
+                                <a class="dropdown-item" href="#">
+                                <i class="fa fa-money" aria-hidden="true"></i>&nbsp; Como ganhar um dinheiro extra</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown" style="margin-left: 20px;height:  37px;">
+                            <a class="nav-link dropdown-toggle" style="padding-right:  1em;" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-question-circle" aria-hidden="true" style="color: white"></i>
+                            Não encontrou o que procura?
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">
+                                <i class="fa fa-check" aria-hidden="true"></i>&nbsp; Faça uma proposta</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown" style="margin-left: 20px;height:  37px;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user" aria-hidden="true" style="color: white"></i>
+                            Seja um associado Black                          
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">
+                                <i class="fa fa-check" aria-hidden="true"></i>&nbsp; Benefícios</a>
+                                <a class="dropdown-item" href="#">
+                                <i class="fa fa-user" aria-hidden="true"></i>&nbsp; Para corretores</a>
+                                <a class="dropdown-item" href="#">
+                                <i class="fa fa-building" aria-hidden="true"></i>&nbsp; Para imobiliárias</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                <i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp; Perguntas frequentes</a>
+                            </div>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-nav-pesquisa" style="margin-left: -22px;">
+                    <ul style="margin-left: -57px;
+                        margin-right: 0px;
+                        margin-top: 15px;">
+                        <li class="nav-item" id="paddingleft0">
+                            <form class="form-inline my-2 my-lg-0 form-left " style="float: right">
+                                <input class="form-control mr-sm-2 col-10 " type="search" placeholder="Pesquise por Endereço ou Código do Imóvel" aria-label="Search" style="margin-bottom: 2px;font-size: 11px;line-height: 10px;width: 262px;">
+                                <button class="btn btn-lupa" type="submit"><i class="fa fa-search" aria-hidden="true" style="color:white"></i></button>
+                            </form>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <!-- banner -->
+        <section>
+            <div class="jumbotron" style="height: 14.7em;margin-bottom: 15px;">
+                <h1 style=" font-size: 4.5rem;
+                        font-weight: 300;
+                        line-height: 1.2;
+                        margin-left: -17px;
+                        margin-right: 1px;
+                        ">
+                    <span><a href="login.html"><button type="button" class="btn buttonAcesseSuaConta" 
+                style="margin-top: -3em;margin-bottom: 0em;float: right">Acesse sua conta</button></a></span>
+                    <span style="color: red;">ALUGUE</span> AGORA OU<span style="color: red;">COMPRE</span> AGORA
+                </h1>
+            </div>
+        </section>
+        <!-- end banner -->
+
+        <!-- botao anuncie sem pagar nada -->
+        <section>
+            <div class="container">
+                <p style="text-align: center;padding-bottom: 1em;">
+                    <a href="login.html"><button type="button" id="AnuncieSemPagarNada" class="btn btn-danger button3">Anuncie sem pagar nada</button></a>
+                </p>
+
+            </div>
+        </section>
+
+        <div class="container justify-content-center" style="display: flex;margin-top: -20px;">
+            <h3 style="color: #696969">BUSQUE SEU IMÓVEL</h3>
+        </div>
+
+    </div>
+
+    <!-- NAV BAR FIXED-->
+    <nav id='nav_bar'>
+        <div style="background-color: #f6f6f6;     box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);">
+            <ul class="nav justify-content-center" style="background-color: #f6f6f6;padding-top: 0em">
+                <li class="nav-item">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-success green" style="height:  38px;" type="button" disabled>
+                                <i class="fa fa-home" aria-hidden="true"></i></button>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect03">
+                            <option selected>Tipo de imovél</option>
+                            <option value="1">Casa</option>
+                            <option value="2">Apartamento</option>
+                            <option value="3">Terreno</option>
+                        </select>
+                    </div>
+                </li>&nbsp;
+                <li class="nav-item">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-success">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Comprar
+                      </label>&nbsp;
+                        <label class="btn btn-outline-success">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> Alugar
+                      </label>
+                    </div>
+                </li>&nbsp;
+                <li class="nav-item">
+
+                </li>
+                <li class="nav-item">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-success green" style="height:  38px;" type="button" disabled>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Onde?" aria-label="" aria-describedby="basic-addon1">
+                    </div>
+                </li>&nbsp;
+                <li class="nav-item">
+                    <button type="button" class="btn btn-search" style="height:  38px;    margin-top: 0px;">
+                        <i class="fa fa-search" aria-hidden="true" style="color: #006400"></i></button>
+                    <button type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="border: none;background-color: transparent;color: #696969;    cursor: pointer;">
+                        Busca avançada 
+                        <i class="fa fa-angle-double-down"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="container" style="padding-top: 0em">
+                <ul class="nav justify-content-center" style="background-color: #f6f6f6;">
+                    <li style="background-color: #f6f6f6;">
+                        <div class="collapse ml-auto" id="collapseExample" style="width: 100%">
+                            <div class="card card-block" style="border: none;">
+                                <ul class="nav" style="background-color: #f6f6f6;">
+                                    <li style="background-color: #f6f6f6;">
+                                        <div class="dropdown">
+                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                       <i class="fa fa-bed" aria-hidden="true"></i> Quartos
+                                              </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;1</a>
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;2</a>
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;3 </a>
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;4 ou mais</a>
+                                            </div>
+                                        </div>
+                                    </li>&nbsp;
+                                    <li class="nav-item" style="background-color: #f6f6f6;">
+                                        <div class="dropdown">
+                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                       <i class="fa fa-bath" aria-hidden="true"></i> Suítes
+                                              </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;1</a>
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;2</a>
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;3 </a>
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;4 ou mais</a>
+                                            </div>
+                                        </div>
+                                    </li>&nbsp;
+                                    <li class="nav-item" style="background-color: #f6f6f6;">
+                                        <div class="dropdown">
+                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                       <i class="fa fa-shower" aria-hidden="true"></i> Banheiros
+                                              </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;1</a>
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;2</a>
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;3 </a>
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;4 ou mais</a>
+                                            </div>
+                                        </div>
+                                    </li>&nbsp;
+                                    <br>
+                                    <li class="nav-item">
+                                        <div class="dropdown">
+                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                       <i class="fa fa-car" aria-hidden="true"></i> Vagas
+                                              </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;1</a>
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;2</a>
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;3 </a>
+                                                <a class="dropdown-item" style="font-size: 20px;"><input type="checkbox" class="checksize">&nbsp;4 ou mais</a>
+                                            </div>
+                                        </div>
+
+                                    </li>&nbsp;
+                                    <li class="nav-item" style="background-color: #f6f6f6;">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <button style="height:  38px;" class="btn btn-success green" type="button" disabled>
+                                                        <i class="fa fa-money" aria-hidden="true"></i>
+                                                    </button>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Valor minimo" aria-label="" aria-describedby="basic-addon1">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="input-group mb-3" style="padding-left: 4px;">
+                                            <div class="input-group-prepend">
+                                                <button style="height:  38px;" class="btn btn-success green" type="button" disabled>
+                                                        <i class="fa fa-money" aria-hidden="true"></i>
+                                                    </button>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Valor maxímo" aria-label="" aria-describedby="basic-addon1">
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id='body_div' style="margin-top: 80px;">
+        <div class="container justify-content-center" style="display: flex;margin-top: 16px;margin-bottom: 0px;">
+            <h3 style=" font-weight: bold; color: #696969">IMÓVEIS EM DESTAQUE PERTO DE VOCÊ</h3>
+        </div>
+
+        <!--card 1-->
+
+        <section style="margin-top: -1px">
+            <div class="container alinha-cards-imoveis alinhamento" style=" padding-top:  1em;
+                                                                        padding-bottom:  1em;
+                                                                        padding-left: 1.9em;">
+                <div class="container alinha-cards-imoveis alinhamento" style=" padding-left: 0em;
+                                                                            padding-right: 0em;
+                                                                            padding-top:  0em;
+                                                                            padding-bottom:  1em;">
+                    <div class="card button2" style="padding-bottom: 0em;padding-top: 2em;padding-left: 1em;padding-right: 1em;width: 59em;margin-left: 8em;margin-top: -2em;">
+                        <div class="row" style="background-color: #F8F8FF;padding-left: 0em;    margin-top: -2em;">
+                            <div class="col-md-6" style="padding-bottom:  1em;
+                                                     padding-top:  1em;">
+                                <div class="card-block">
+                                    <h4 class="card-title">Mooca Apartamento 55m² &nbsp; &nbsp; &nbsp;
+                                        <i class="fa fa-share-alt" aria-hidden="true" style="padding-left: 1em;"></i>
+                                        <i class="fa fa-heart" aria-hidden="true" style="padding-left: 1em;"></i>
+                                    </h4>
+                                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Rua das maravilhas, 155</p>
+                                    <div class="preco1">
+                                        <span>Preço</span>
+                                        <span style="font-size: 20px;color: green"><strong>R$2,000,000</strong></span>
+                                    </div>
+                                    <p style="font-size: 13px">
+                                        Apartamentos de 2 quartos com 1 suíte, em um bairro tranquilo e com lugares de lazer próximos. Pronto para morar.
+                                        <br>
+                                    </p>
+                                    <p style="font-size: 13px" class="card-text">
+                                        <span>
+                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>&nbsp; 55 m²</span>&nbsp;
+                                        <span>
+                                    <i class="fa fa-bed" aria-hidden="true"></i>&nbsp; 2 Quartos</span>&nbsp;
+                                        <span>    
+                                    <i class="fa fa-bath" aria-hidden="true"></i>&nbsp; 1 Suite</span>&nbsp;
+                                        <span>    
+                                    <i class="fa fa-shower" aria-hidden="true"></i>&nbsp; 1 Banheiro</span>&nbsp;
+                                        <span>    
+                                    <i class="fa fa-car" aria-hidden="true"></i>&nbsp; 1 Vaga</span>&nbsp;
+
+                                    </p>
+
+
+                                    <h1>
+                                        <span>
+                                        
+                                        <strong>&nbsp;</strong>
+                                    </span>
+                                    </h1>
+                                    <span style="text-align: center;">
+                            <button class="btn btn-success btn-phone" type="button" aria-expanded="false" data-toggle="collapse" data-parent="#accordion" href="#collapseExample1">
+                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                            </button>&nbsp;
+                            <button class="btn btn-success mx-auto" type="button" aria-expanded="false" data-toggle="collapse" data-parent="#accordion" href="#collapseExample2">
+                                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            </button>&nbsp;
+                            <button class="btn btn-success btn-email" id="login1" type="button">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </button>&nbsp;
+
+<div id="loginForm1" class="hide">
+    <form action="/echo/html/" id="popForm" method="get">
+        <div>
+            <label for="nome" style="margin-bottom: 0px;margin-top: 2px;">Nome:</label>
+            <input type="text" name="nome" id="nome" class="form-control input-md">
+            <label for="email" style="margin-bottom: 0px;margin-top: 2px;">E-mail:</label>
+            <input type="text" name="email" id="email" class="form-control input-md">
+            <label for="telefone" style="margin-bottom: 0px;margin-top: 2px;">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" class="form-control input-md">
+            <label for="mensagem" style="margin-bottom: 0px;margin-top: 2px;">Mensagem:</label>
+            <textarea style="overflow:hidden; font-size: 12px; color: #979797" rows="3" name="mensagem" id="mensagem" class="form-control">Olá, Gostaria de ter mais informações sobre o imóvel anunciado no alugueAgora.
+            </textarea>
+            <div class="campo-checkbox flexbox">
+                    <input type="checkbox" id="chkNoticias" checked="checked" class="input-checkbox" style="margin-top: 5px;"> 
+                    <label for="chkNoticias" style="margin-left: 17px;margin-top: -21px;">Desejo receber notícias e ofertas do Alugue Agora por e-mail.</label>
+            </div>
+                    <button type="button" class="btn btn-contatar-anunciante" data-loading-text="Sending info.."><em class="icon-ok"></em> Enviar</button>
+        </div>
+    </form>
+</div>
+
+<script>
+document.getElementById("loginForm1").style.display="none";
+
+$(function(){
+    $('#login1').popover({
+        placement: 'right',
+        title: 'CONTATAR ANUNCIANTE',
+        html:true,
+        content:  $('#loginForm1').html()
+    }).on('click', function(){
+      // had to put it within the on click action so it grabs the correct info on submit
+      $('.btn-contatar-anunciante').click(function(){
+       //$('#result').after("form submitted by " + $('#nome').val())
+        $.post('/echo/html/',  {
+            nome: $('#nome').val(),
+            email: $('#email').val(),
+            telefone: $('#telefone').val()
+        }, function(r){
+          $('#loginForm1').popover('hide')
+          //$('#result').html('resonse from server could be here' )
+        })
+      })
+  })
+})
+
+</script>
+
+
+
+
+                                <div class="collapse" id="collapseExample1">
+                                    <div class="card card-body" style="text-align: left;">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                                <strong>&nbsp; Telefone: (11) 555-555</strong>
+                                            </span>
+                                    </p>
+                                </div>
+                            </div>
+                            </span>
+
+                            <span style="text-align: center;">
+                                <div class="collapse" id="collapseExample2">
+                                    <div class="card card-body" style="text-align: left;">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                <strong>&nbsp;
+                                                    <a href="https://web.whatsapp.com/">Web Whatsapp</a>
+                                                </strong>
+                                            </span>
+                            </p>
+                        </div>
+                    </div>
+                    </span>
+                    <span style="text-align: center;">
+                                <div class="collapse" id="collapseExample3">
+                                    <div class="card card-body" style="background-color: #FAEBD7  ;text-align: left;">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                                                <strong>&nbsp; email: john@johndo2.com</strong>
+                                            </span>
+                    </p>
+                </div>
+            </div>
+            </span>
+    </div>
+    </div>
+    <div class="col-md-6" style="
+    padding-top:  1em;
+    padding-bottom:  1em;
+    height:  200px;
+">
+        <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel" style="
+    /* height:  200px; */
+">
+            <div class="carousel-inner" role="listbox" style="height: 260px">
+                <div class="carousel-item" style="">
+                    <img class="d-block img-fluid" src="imagens/im4.jpg" alt="First slide" style="
+    width: 350;
+    height: 250;
+">
+                </div>
+                <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="imagens/im5.jpg" alt="Second slide" style="
+">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="imagens/im6.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span>
+                                <span class="sr-only" style="color: black;">Previous</span>
+                            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="color: black;"></span>
+                                <span class="sr-only" style="color: black;">Next</span>
+                            </a>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!--card 2 -->
+
+
+    <section style="margin-top: -1px">
+        <div class="container alinha-cards-imoveis alinhamento" style=" padding-top:  1em;
+                                                                        padding-bottom:  1em;
+                                                                        padding-left: 1.9em;">
+            <div class="container alinha-cards-imoveis alinhamento" style=" padding-left: 0em;
+                                                                            padding-right: 0em;
+                                                                            padding-top:  0em;
+                                                                            padding-bottom:  1em;">
+                <div class="card button2" style="padding-bottom: 0em;padding-top: 2em;padding-left: 1em;padding-right: 1em;width: 59em;margin-left: 8em;margin-top: -2em;">
+                    <div class="row" style="background-color: #F8F8FF;padding-left: 0em;    margin-top: -2em;">
+                        <div class="col-md-6" style="   padding-bottom:  1em;
+                                                        padding-top:  1em;">
+                            <div class="card-block">
+                                <h4 class="card-title">Santana Apartamento 85m² &nbsp; &nbsp; &nbsp;
+                                    <i class="fa fa-share-alt" aria-hidden="true" style="padding-left: 1em;"></i>
+                                    <i class="fa fa-heart" aria-hidden="true" style="padding-left: 1em;"></i>
+                                </h4>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Rua Marcos Tavares, 235</p>
+                                <div class="preco1">
+                                    <span>Preço</span>
+                                    <span style="font-size: 20px;color: green"><strong>R$2,000,000</strong></span>
+                                </div>
+                                <p style="font-size: 13px">
+                                    Apartamento de 3 quartos com 2 suíte, perto de escolas e centro comercial, em um bairro tranquilo e muito bonito.
+                                    <br>
+                                </p>
+                                <p style="font-size: 13px" class="card-text">
+                                    <span>
+                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>&nbsp; 235 m²</span>&nbsp;
+                                    <span>
+                                    <i class="fa fa-bed" aria-hidden="true"></i>&nbsp; 3 Quartos</span>&nbsp;
+                                    <span>    
+                                    <i class="fa fa-bath" aria-hidden="true"></i>&nbsp; 2 Suite</span>&nbsp;
+                                    <span>    
+                                    <i class="fa fa-shower" aria-hidden="true"></i>&nbsp; 1 Banheiro</span>&nbsp;
+                                    <span>    
+                                    <i class="fa fa-car" aria-hidden="true"></i>&nbsp; 2 Vaga</span>&nbsp;
+
+                                </p>
+
+                                <h1>
+                                    <span>
+                                   
+                                    <strong>&nbsp;</strong>
+                                </span>
+                                </h1>
+
+
+
+                                <span style="text-align: center;">
+                                <button class="btn btn-success btn-phone" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                </button>&nbsp;
+                                <button class="btn btn-success mx-auto" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                </button>&nbsp;
+                               <button class="btn btn-success btn-email" id="login2" type="button">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </button>&nbsp;
+
+<div id="loginForm2" class="hide">
+    <form action="/echo/html/" id="popForm" method="get">
+        <div>
+            <label for="nome" style="margin-bottom: 0px;margin-top: 2px;">Nome:</label>
+            <input type="text" name="nome" id="nome" class="form-control input-md">
+            <label for="email" style="margin-bottom: 0px;margin-top: 2px;">E-mail:</label>
+            <input type="text" name="email" id="email" class="form-control input-md">
+            <label for="telefone" style="margin-bottom: 0px;margin-top: 2px;">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" class="form-control input-md">
+            <label for="mensagem" style="margin-bottom: 0px;margin-top: 2px;">Mensagem:</label>
+            <textarea style="overflow:hidden; font-size: 12px; color: #979797" rows="3" name="mensagem" id="mensagem" class="form-control">Olá, Gostaria de ter mais informações sobre o imóvel anunciado no alugueAgora.
+            </textarea>
+            <div class="campo-checkbox flexbox">
+                    <input type="checkbox" id="chkNoticias" checked="checked" class="input-checkbox" style="margin-top: 5px;"> 
+                    <label for="chkNoticias" style="margin-left: 17px;margin-top: -21px;">Desejo receber notícias e ofertas do Alugue Agora por e-mail.</label>
+            </div>
+                    <button type="button" class="btn btn-contatar-anunciante" data-loading-text="Sending info.."><em class="icon-ok"></em> Enviar</button>
+        </div>
+    </form>
+</div>
+
+<script>
+document.getElementById("loginForm2").style.display="none";
+
+$(function(){
+    $('#login2').popover({
+        placement: 'right',
+        title: 'CONTATAR ANUNCIANTE',
+        html:true,
+        content:  $('#loginForm2').html()
+    }).on('click', function(){
+      // had to put it within the on click action so it grabs the correct info on submit
+      $('.btn-contatar-anunciante').click(function(){
+       //$('#result').after("form submitted by " + $('#nome').val())
+        $.post('/echo/html/',  {
+            nome: $('#nome').val(),
+            email: $('#email').val(),
+            telefone: $('#telefone').val()
+        }, function(r){
+          $('#loginForm2').popover('hide')
+          //$('#result').html('resonse from server could be here' )
+        })
+      })
+  })
+})
+
+</script>
+
+                                <div class="collapse" id="collapseExample4">
+                                    <div class="card card-body" style="text-align: left;">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                                <strong>&nbsp; Telefone: (11) 555-555</strong>
+                                            </span>
+                                </p>
+                            </div>
+                        </div>
+                        </span>
+
+                        <span style="text-align: center;">
+                                <div class="collapse" id="collapseExample5">
+
+                                    <div class="card card-body" style="text-align: left;">
+
+
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                <strong>&nbsp;
+                                                    <a href="https://web.whatsapp.com/">Web Whatsapp</a>
+                                                </strong>
+                                            </span>
+                        </p>
+
+
+
+                    </div>
+                </div>
+                </span>
+                <span style="text-align: center;">
+                                <div class="collapse" id="collapseExample6">
+                                    <div class="card card-body" style="background-color: #FAEBD7  ;text-align: left;">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                                                <strong>&nbsp; email: john@johndo2.com</strong>
+                                            </span>
+                </p>
+            </div>
+        </div>
+        </span>
+        </div>
+        </div>
+        <div class="col-md-6" style="
+    padding-top:  1em;
+    padding-bottom:  1em;
+    height:  200px;
+">
+            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel" style="
+    /* height:  200px; */
+">
+                <div class="carousel-inner" role="listbox" style="height: 260px">
+                    <div class="carousel-item" style="">
+                        <img class="d-block img-fluid" src="imagens/im7.jpg" alt="First slide" style="
+    width: 350;
+    height: 250;
+">
+                    </div>
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="imagens/im8.jpg" alt="Second slide" style="
+">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="imagens/im9.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span>
+                                <span class="sr-only" style="color: black;">Previous</span>
+                            </a>
+                <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="color: black;"></span>
+                                <span class="sr-only" style="color: black;">Next</span>
+                            </a>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!--card 3 -->
+
+
+    <section style="margin-top: -1px">
+        <div class="container alinha-cards-imoveis alinhamento" style=" padding-top:  1em;
+                                                                        padding-bottom:  1em;
+                                                                        padding-left: 1.9em;">
+            <div class="container alinha-cards-imoveis alinhamento" style=" padding-left: 0em;
+                                                                            padding-right: 0em;
+                                                                            padding-top:  0em;
+                                                                            padding-bottom:  1em;">
+                <div class="card button2" style="padding-bottom: 0em;padding-top: 2em;padding-left: 1em;padding-right: 1em;width: 59em;margin-left: 8em;margin-top: -2em;">
+                    <div class="row" style="background-color: #F8F8FF;padding-left: 0em;    margin-top: -2em;">
+                        <div class="col-md-6" style="
+    padding-bottom:  1em;
+    padding-top:  1em;
+">
+                            <div class="card-block">
+                                <h4 class="card-title">Jabaquara Casa 255m² &nbsp; &nbsp; &nbsp;
+                                    <i class="fa fa-share-alt" aria-hidden="true" style="padding-left: 1em;"></i>
+                                    <i class="fa fa-heart" aria-hidden="true" style="padding-left: 1em;"></i>
+                                </h4>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Rua das maravilhas, 155</p>
+                                <div class="preco1">
+                                    <span>Preço</span>
+                                    <span style="font-size: 20px;color: green"><strong>R$2,000,000</strong></span>
+                                </div>
+                                <p style="font-size: 13px">
+                                    Casa de 3 quartos com quintal amplo, piscina e duas vagas para carro na garagem, em um bairro residencial, seguro e perto de escolas, tem fácil acesso a estação de metro.
+                                    <br>
+                                </p>
+                                <p style="font-size: 13px" class="card-text">
+                                    <span>
+                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>&nbsp; 255 m²</span>&nbsp;
+                                    <span>
+                                    <i class="fa fa-bed" aria-hidden="true"></i>&nbsp; 3 Quartos</span>&nbsp;
+                                    <span>    
+                                    <i class="fa fa-bath" aria-hidden="true"></i>&nbsp; 1 Suite</span>&nbsp;
+                                    <span>    
+                                    <i class="fa fa-shower" aria-hidden="true"></i>&nbsp; 1 Banheiro</span>&nbsp;
+                                    <span>    
+                                    <i class="fa fa-car" aria-hidden="true"></i>&nbsp; 2 Vagas</span>&nbsp;
+                                </p>
+                                <h1>
+                                    <span>
+                                    <strong>&nbsp;</strong>
+                                </span>
+                                </h1>
+                                <span style="text-align: center;">
+                                <button class="btn btn-success btn-phone" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                </button>&nbsp;
+                                <button class="btn btn-success mx-auto" type="button" data-toggle="collapse" data-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">
+                                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                </button>&nbsp;
+                                <button class="btn btn-success btn-email" id="login3" type="button">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </button>&nbsp;
+
+<div id="loginForm3" class="hide">
+    <form action="/echo/html/" id="popForm" method="get">
+        <div>
+            <label for="nome" style="margin-bottom: 0px;margin-top: 2px;">Nome:</label>
+            <input type="text" name="nome" id="nome" class="form-control input-md">
+            <label for="email" style="margin-bottom: 0px;margin-top: 2px;">E-mail:</label>
+            <input type="text" name="email" id="email" class="form-control input-md">
+            <label for="telefone" style="margin-bottom: 0px;margin-top: 2px;">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" class="form-control input-md">
+            <label for="mensagem" style="margin-bottom: 0px;margin-top: 2px;">Mensagem:</label>
+            <textarea style="overflow:hidden; font-size: 12px; color: #979797" rows="3" name="mensagem" id="mensagem" class="form-control">Olá, Gostaria de ter mais informações sobre o imóvel anunciado no alugueAgora.
+            </textarea>
+            <div class="campo-checkbox flexbox">
+                    <input type="checkbox" id="chkNoticias" checked="checked" class="input-checkbox" style="margin-top: 5px;"> 
+                    <label for="chkNoticias" style="margin-left: 17px;margin-top: -21px;">Desejo receber notícias e ofertas do Alugue Agora por e-mail.</label>
+            </div>
+                    <button type="button" class="btn btn-contatar-anunciante" data-loading-text="Sending info.."><em class="icon-ok"></em> Enviar</button>
+        </div>
+    </form>
+</div>
+
+<script>
+document.getElementById("loginForm3").style.display="none";
+
+$(function(){
+    $('#login3').popover({
+        placement: 'right',
+        title: 'CONTATAR ANUNCIANTE',
+        html:true,
+        content:  $('#loginForm3').html()
+    }).on('click', function(){
+      // had to put it within the on click action so it grabs the correct info on submit
+      $('.btn-contatar-anunciante').click(function(){
+       //$('#result').after("form submitted by " + $('#nome').val())
+        $.post('/echo/html/',  {
+            nome: $('#nome').val(),
+            email: $('#email').val(),
+            telefone: $('#telefone').val()
+        }, function(r){
+          $('#loginForm3').popover('hide')
+          //$('#result').html('resonse from server could be here' )
+        })
+      })
+  })
+})
+
+</script>
+
+
+                                <div class="collapse" id="collapseExample7">
+                                    <div class="card card-body" style="text-align: left;">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                                <strong>&nbsp; Telefone: (11) 555-555</strong>
+                                            </span>
+                                </p>
+                            </div>
+                        </div>
+                        </span>
+
+                        <span style="text-align: center;">
+                                <div class="collapse" id="collapseExample8">
+
+                                    <div class="card card-body" style="text-align: left;">
+
+
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                <strong>&nbsp;
+                                                    <a href="https://web.whatsapp.com/">Web Whatsapp</a>
+                                                </strong>
+                                            </span>
+                        </p>
+
+
+
+                    </div>
+                </div>
+                </span>
+                <span style="text-align: center;">
+                                <div class="collapse" id="collapseExample9">
+                                    <div class="card card-body" style="background-color: #FAEBD7  ;text-align: left;">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                                                <strong>&nbsp; email: john@johndo2.com</strong>
+                                            </span>
+                </p>
+            </div>
+        </div>
+        </span>
+        </div>
+        </div>
+        <div class="col-md-6" style="
+    padding-top:  1em;
+    padding-bottom:  1em;
+    height:  200px;
+">
+            <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel" style="
+    /* height:  200px; */
+">
+                <div class="carousel-inner" role="listbox" style="height: 260px">
+                    <div class="carousel-item" style="">
+                        <img class="d-block img-fluid" src="imagens/im1.jpg" alt="First slide" style="
+    width: 350;
+    height: 250;
+">
+                    </div>
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="imagens/im2.jpg" alt="Second slide" style="
+">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="imagens/im3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span>
+                                <span class="sr-only" style="color: black;">Previous</span>
+                            </a>
+                <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="color: black;"></span>
+                                <span class="sr-only" style="color: black;">Next</span>
+                            </a>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- card4-->
+    <section style="margin-top: -1px">
+        <div class="container alinha-cards-imoveis alinhamento" style=" padding-top:  1em;
+                                                                        padding-bottom:  1em;
+                                                                        padding-left: 1.9em;">
+            <div class="container alinha-cards-imoveis alinhamento" style=" padding-left: 0em;
+                                                                            padding-right: 0em;
+                                                                            padding-top:  0em;
+                                                                            padding-bottom:  1em;">
+                <div class="card button2" style="padding-bottom: 0em;padding-top: 2em;padding-left: 1em;padding-right: 1em;width: 59em;margin-left: 8em;margin-top: -2em;">
+                    <div class="row" style="background-color: #F8F8FF;padding-left: 0em;    margin-top: -2em;">
+                        <div class="col-md-6" style="
+    padding-bottom:  1em;
+    padding-top:  1em;
+">
+                            <div class="card-block">
+                                <h4 class="card-title">Jabaquara Casa 255m² &nbsp; &nbsp; &nbsp;
+                                    <i class="fa fa-share-alt" aria-hidden="true" style="padding-left: 1em;"></i>
+                                    <i class="fa fa-heart" aria-hidden="true" style="padding-left: 1em;"></i>
+                                </h4>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Rua das maravilhas, 155</p>
+                                <div class="preco1">
+                                    <span>Preço</span>
+                                    <span style="font-size: 20px;color: green"><strong>R$2,000,000</strong></span>
+                                </div>
+                                <p style="font-size: 13px">
+                                    Casa de 3 quartos com quintal amplo, piscina e duas vagas para carro na garagem, em um bairro residencial, seguro e perto de escolas, tem fácil acesso a estação de metro.
+                                    <br>
+                                </p>
+                                <p style="font-size: 13px" class="card-text">
+                                    <span>
+                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>&nbsp; 255 m²</span>&nbsp;
+                                    <span>
+                                    <i class="fa fa-bed" aria-hidden="true"></i>&nbsp; 3 Quartos</span>&nbsp;
+                                    <span>    
+                                    <i class="fa fa-bath" aria-hidden="true"></i>&nbsp; 1 Suite</span>&nbsp;
+                                    <span>    
+                                    <i class="fa fa-shower" aria-hidden="true"></i>&nbsp; 1 Banheiro</span>&nbsp;
+                                    <span>    
+                                    <i class="fa fa-car" aria-hidden="true"></i>&nbsp; 2 Vagas</span>&nbsp;
+                                </p>
+                                <h1>
+                                    <span>
+                                  
+                                    <strong>&nbsp;</strong>
+                                </span>
+                                </h1>
+                                <span style="text-align: center;">
+                                <button class="btn btn-success btn-phone" type="button" data-toggle="collapse" data-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample10">
+                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                </button>&nbsp;
+                                <button class="btn btn-success mx-auto" type="button" data-toggle="collapse" data-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample11">
+                                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                </button>&nbsp;
+                                <button class="btn btn-success btn-email" id="login4" type="button">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </button>&nbsp;
+
+<div id="loginForm4" class="hide">
+    <form action="/echo/html/" id="popForm" method="get">
+        <div>
+            <label for="nome" style="margin-bottom: 0px;margin-top: 2px;">Nome:</label>
+            <input type="text" name="nome" id="nome" class="form-control input-md">
+            <label for="email" style="margin-bottom: 0px;margin-top: 2px;">E-mail:</label>
+            <input type="text" name="email" id="email" class="form-control input-md">
+            <label for="telefone" style="margin-bottom: 0px;margin-top: 2px;">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" class="form-control input-md">
+            <label for="mensagem" style="margin-bottom: 0px;margin-top: 2px;">Mensagem:</label>
+            <textarea style="overflow:hidden; font-size: 12px; color: #979797" rows="3" name="mensagem" id="mensagem" class="form-control">Olá, Gostaria de ter mais informações sobre o imóvel anunciado no alugueAgora.
+            </textarea>
+            <div class="campo-checkbox flexbox">
+                    <input type="checkbox" id="chkNoticias" checked="checked" class="input-checkbox" style="margin-top: 5px;"> 
+                    <label for="chkNoticias" style="margin-left: 17px;margin-top: -21px;">Desejo receber notícias e ofertas do Alugue Agora por e-mail.</label>
+            </div>
+                    <button type="button" class="btn btn-contatar-anunciante" data-loading-text="Sending info.."><em class="icon-ok"></em> Enviar</button>
+        </div>
+    </form>
+</div>
+
+<script>
+document.getElementById("loginForm4").style.display="none";
+
+$(function(){
+    $('#login4').popover({
+        placement: 'right',
+        title: 'CONTATAR ANUNCIANTE',
+        html:true,
+        content:  $('#loginForm4').html()
+    }).on('click', function(){
+      // had to put it within the on click action so it grabs the correct info on submit
+      $('.btn-contatar-anunciante').click(function(){
+       //$('#result').after("form submitted by " + $('#nome').val())
+        $.post('/echo/html/',  {
+            nome: $('#nome').val(),
+            email: $('#email').val(),
+            telefone: $('#telefone').val()
+        }, function(r){
+          $('#loginForm4').popover('hide')
+          //$('#result').html('resonse from server could be here' )
+        })
+      })
+  })
+})
+
+</script>
+
+
+                                <div class="collapse" id="collapseExample10">
+                                    <div class="card card-body" style="text-align: left;">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                                <strong>&nbsp; Telefone: (11) 555-555</strong>
+                                            </span>
+                                </p>
+                            </div>
+                        </div>
+                        </span>
+
+                        <span style="text-align: center;">
+                                <div class="collapse" id="collapseExample11">
+
+                                    <div class="card card-body" style="text-align: left;">
+
+
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                <strong>&nbsp;
+                                                    <a href="https://web.whatsapp.com/">Web Whatsapp</a>
+                                                </strong>
+                                            </span>
+                        </p>
+
+
+
+                    </div>
+                </div>
+                </span>
+                <span style="text-align: center;">
+                                <div class="collapse" id="collapseExample9">
+                                    <div class="card card-body" style="background-color: #FAEBD7  ;text-align: left;">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                                                <strong>&nbsp; email: john@johndo2.com</strong>
+                                            </span>
+                </p>
+            </div>
+        </div>
+        </span>
+        </div>
+        </div>
+        <div class="col-md-6" style="
+    padding-top:  1em;
+    padding-bottom:  1em;
+    height:  200px;
+">
+            <div id="carouselExampleControls4" class="carousel slide" data-ride="carousel" style="
+    /* height:  200px; */
+">
+                <div class="carousel-inner" role="listbox" style="height: 260px">
+                    <div class="carousel-item" style="">
+                        <img class="d-block img-fluid" src="imagens/im1.jpg" alt="First slide" style="
+    width: 350;
+    height: 250;
+">
+                    </div>
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="imagens/im2.jpg" alt="Second slide" style="
+">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="imagens/im3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls4" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span>
+                                <span class="sr-only" style="color: black;">Previous</span>
+                            </a>
+                <a class="carousel-control-next" href="#carouselExampleControls4" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="color: black;"></span>
+                                <span class="sr-only" style="color: black;">Next</span>
+                            </a>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- card 5 -->
+    <section style="margin-top: -1px">
+        <div class="container alinha-cards-imoveis alinhamento" style=" padding-top:  1em;
+                                                                        padding-bottom:  1em;
+                                                                        padding-left: 1.9em;">
+            <div class="container alinha-cards-imoveis alinhamento" style=" padding-left: 0em;
+                                                                            padding-right: 0em;
+                                                                            padding-top:  0em;
+                                                                            padding-bottom:  1em;">
+                <div class="card button2" style="padding-bottom: 0em;padding-top: 2em;padding-left: 1em;padding-right: 1em;width: 59em;margin-left: 8em;margin-top: -2em;">
+                    <div class="row" style="background-color: #F8F8FF;padding-left: 0em;    margin-top: -2em;">
+                        <div class="col-md-6" style="
+    padding-bottom:  1em;
+    padding-top:  1em;
+">
+                            <div class="card-block">
+                                <h4 class="card-title">Jabaquara Casa 255m² &nbsp; &nbsp; &nbsp;
+                                    <i class="fa fa-share-alt" aria-hidden="true" style="padding-left: 1em;"></i>
+                                    <i class="fa fa-heart" aria-hidden="true" style="padding-left: 1em;"></i>
+                                </h4>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Rua das maravilhas, 155</p>
+                                <div class="preco1">
+                                    <span>Preço</span>
+                                    <span style="font-size: 20px;color: green"><strong>R$2,000,000</strong></span>
+                                </div>
+
+                                <p style="font-size: 13px">
+                                    Casa de 3 quartos com quintal amplo, piscina e duas vagas para carro na garagem, em um bairro residencial, seguro e perto de escolas, tem fácil acesso a estação de metro.
+                                    <br>
+                                </p>
+                                <p style="font-size: 13px" class="card-text">
+                                    <span>
+                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>&nbsp; 255 m²</span>&nbsp;
+                                    <span>
+                                    <i class="fa fa-bed" aria-hidden="true"></i>&nbsp; 3 Quartos</span>&nbsp;
+                                    <span>    
+                                    <i class="fa fa-bath" aria-hidden="true"></i>&nbsp; 1 Suite</span>&nbsp;
+                                    <span>    
+                                    <i class="fa fa-shower" aria-hidden="true"></i>&nbsp; 1 Banheiro</span>&nbsp;
+                                    <span>    
+                                    <i class="fa fa-car" aria-hidden="true"></i>&nbsp; 2 Vagas</span>&nbsp;
+                                </p>
+                                <h1>
+                                    <span>
+                                    
+                                    <strong>&nbsp;</strong>
+                                </span>
+                                </h1>
+                                <span style="text-align: center;">
+                                <button class="btn btn-success btn-phone" type="button" data-toggle="collapse" data-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample12">
+                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                </button>&nbsp;
+                                <button class="btn btn-success mx-auto" type="button" data-toggle="collapse" data-target="#collapseExample13" aria-expanded="false" aria-controls="collapseExample13">
+                                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                </button>&nbsp;
+                                <button class="btn btn-success btn-email" id="login5" type="button">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </button>&nbsp;
+
+<div id="loginForm5" class="hide">
+    <form action="/echo/html/" id="popForm" method="get">
+        <div>
+            <label for="nome" style="margin-bottom: 0px;margin-top: 2px;">Nome:</label>
+            <input type="text" name="nome" id="nome" class="form-control input-md">
+            <label for="email" style="margin-bottom: 0px;margin-top: 2px;">E-mail:</label>
+            <input type="text" name="email" id="email" class="form-control input-md">
+            <label for="telefone" style="margin-bottom: 0px;margin-top: 2px;">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" class="form-control input-md">
+            <label for="mensagem" style="margin-bottom: 0px;margin-top: 2px;">Mensagem:</label>
+            <textarea style="overflow:hidden; font-size: 12px; color: #979797" rows="3" name="mensagem" id="mensagem" class="form-control">Olá, Gostaria de ter mais informações sobre o imóvel anunciado no alugueAgora.
+            </textarea>
+            <div class="campo-checkbox flexbox">
+                    <input type="checkbox" id="chkNoticias" checked="checked" class="input-checkbox" style="margin-top: 5px;"> 
+                    <label for="chkNoticias" style="margin-left: 17px;margin-top: -21px;">Desejo receber notícias e ofertas do Alugue Agora por e-mail.</label>
+            </div>
+                    <button type="button" class="btn btn-contatar-anunciante" data-loading-text="Sending info.."><em class="icon-ok"></em> Enviar</button>
+        </div>
+    </form>
+</div>
+
+<script>
+document.getElementById("loginForm5").style.display="none";
+
+$(function(){
+    $('#login5').popover({
+        placement: 'right',
+        title: 'CONTATAR ANUNCIANTE',
+        html:true,
+        content:  $('#loginForm5').html()
+    }).on('click', function(){
+      // had to put it within the on click action so it grabs the correct info on submit
+      $('.btn-contatar-anunciante').click(function(){
+       //$('#result').after("form submitted by " + $('#nome').val())
+        $.post('/echo/html/',  {
+            nome: $('#nome').val(),
+            email: $('#email').val(),
+            telefone: $('#telefone').val()
+        }, function(r){
+          $('#loginForm5').popover('hide')
+          //$('#result').html('resonse from server could be here' )
+        })
+      })
+  })
+})
+
+</script>
+
+
+                                <div class="collapse" id="collapseExample12">
+                                    <div class="card card-body" style="text-align: left;">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                                <strong>&nbsp; Telefone: (11) 555-555</strong>
+                                            </span>
+                                </p>
+                            </div>
+                        </div>
+                        </span>
+
+                        <span style="text-align: center;">
+                                <div class="collapse" id="collapseExample13">
+
+                                    <div class="card card-body" style="text-align: left;">
+
+
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                <strong>&nbsp;
+                                                    <a href="https://web.whatsapp.com/">Web Whatsapp</a>
+                                                </strong>
+                                            </span>
+                        </p>
+
+
+
+                    </div>
+                </div>
+                </span>
+                <span style="text-align: center;">
+                                <div class="collapse" id="collapseExample9">
+                                    <div class="card card-body" style="background-color: #FAEBD7  ;text-align: left;">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                                                <strong>&nbsp; email: john@johndo2.com</strong>
+                                            </span>
+                </p>
+            </div>
+        </div>
+        </span>
+        </div>
+        </div>
+        <div class="col-md-6" style="
+    padding-top:  1em;
+    padding-bottom:  1em;
+    height:  200px;
+">
+            <div id="carouselExampleControls5" class="carousel slide" data-ride="carousel" style="
+    /* height:  200px; */
+">
+                <div class="carousel-inner" role="listbox" style="height: 260px">
+                    <div class="carousel-item" style="">
+                        <img class="d-block img-fluid" src="imagens/im1.jpg" alt="First slide" style="
+    width: 350;
+    height: 250;
+">
+                    </div>
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="imagens/im2.jpg" alt="Second slide" style="
+">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="imagens/im3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls5" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span>
+                                <span class="sr-only" style="color: black;">Previous</span>
+                            </a>
+                <a class="carousel-control-next" href="#carouselExampleControls5" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="color: black;"></span>
+                                <span class="sr-only" style="color: black;">Next</span>
+                            </a>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section style="margin-right: 5rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <img src="imagens/lancamentos-3.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" style="color: #fff;">
+                        <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp; Fale Conosco</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login" style="color: #fff;">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>&nbsp; Acesse sua conta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff;">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp; Perguntas frequentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff;">
+                        <i class="fa fa-flag" aria-hidden="true"></i>&nbsp; Envie sua proposta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastroimoveis.html" style="color: #fff;">
+                        <i class="fa fa-home" aria-hidden="true"></i>&nbsp; Publique seu imovél</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff;">
+                        <i class="fa fa-user" aria-hidden="true"></i>&nbsp; Seja um associado black</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff;">Redes sociais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff;">
+                        <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff;">
+                        <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff;">
+                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff">
+                        <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+        }
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll(function() {
+                //if you hard code, then use console
+                //.log to determine when you want the 
+                //nav bar to stick.  
+                console.log($(window).scrollTop())
+                if ($(window).scrollTop() > 407) {
+                    $('#nav_bar').addClass('navbar-fixed');
+                }
+                if ($(window).scrollTop() < 408) {
+                    $('#nav_bar').removeClass('navbar-fixed');
+                }
+            });
+        });
+    </script>
+
+
+    <script src="https://unpkg.com/popper.js"></script>
+    <script src="https://use.fontawesome.com/f8d4eea0a8.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+    </div>
+
+</body>
+
+</html>

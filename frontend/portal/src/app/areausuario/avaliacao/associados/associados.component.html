@@ -1,0 +1,108 @@
+<section class="container anuncios avaliacao content-pages">
+
+  <div id="modal-retorno" class="modal" style="height: 22% !important;">
+    <div class="modal-content">
+      <div class="row">
+        <div class="input-field col s12">
+          <p>Sua mensagem foi enviada com sucesso. Em breve nossa equipe entrará em contato.</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button href="/" class="modal-action modal-close waves-effect waves-green btn-flat">OK</button>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col m3 s3">
+
+      <ul class="user-menu">
+        <li><a href="/anuncie" class="waves-effect waves-light btn btn-small"><i class="small material-icons">chat</i> Anuncie</a></li>
+        <li><a href="/usuario/anuncios"  class="waves-effect waves-light btn btn-small"><i class="small material-icons">chat_bubble</i>Meus anúncios</a></li>
+        <li><a href="/usuario/propostas"  class="waves-effect waves-light btn btn-small" ><i class="small material-icons">attach_money</i>Minhas propostas</a></li>
+        <li><a href="/usuario/avaliacao"  class="waves-effect waves-light btn btn-small"><i class="small material-icons">event_available</i>Avaliação</a></li>
+        <li><a href="/usuario/avaliacao/associados" class="active waves-effect waves-light btn btn-small"><i class="small material-icons">contacts</i>Fale conosco</a></li>
+      </ul>
+
+    </div>
+
+    <div class="col m9 s9">
+
+      <div class="imoveis">
+
+        <div class="row">
+          <div class="col s12">
+            <strong class="sub">Fale conosco</strong>
+            <p class="text">Envie suas dúvidas e reclamações</p>
+          </div>
+        </div>
+
+        <div class="row">
+
+
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12 m12">
+                <select
+                  class=""
+                  name="tipo" id="selectTipo"
+                  [(ngModel)]="tipo">
+                  <option value="" disabled selected>Assunto</option>
+                  <option value="elogio">Elogio</option>
+                  <option value="sugestão">Sugestão</option>
+                  <option value="dúvidas">Dúvidas</option>
+                  <option value="reclamação">Reclamação</option>
+                  <option value="pagamento">Pagamento</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m5">
+                <input id="nome" type="text" class="validate">
+                <label for="nome">Nome Completo</label>
+              </div>
+
+              <div class="input-field col s12 m4">
+                <input id="email" type="email" class="validate">
+                <label for="email">E-mail</label>
+              </div>
+
+              <div class="file-field input-field col s12 m3">
+                <div class="btn">
+                  <span>Anexo</span>
+                  <input type="file" multiple>
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text" placeholder="Uma ou mais imagens">
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <div class="row">
+              <div class="input-field col s12 m12">
+                <textarea  id="mensagem" class="materialize-textarea" data-length="120" name="mensagem" [(ngModel)]="mensagem" ></textarea>
+                <label for="mensagem">Mensagem</label>
+              </div>
+            </div>
+
+            <p><button class="waves-effect waves-light btn-large btn-send right modal-trigger" data-target="modal-retorno"><i class="material-icons left">arrow_forward</i>Enviar</button></p>
+
+
+
+          </form>
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

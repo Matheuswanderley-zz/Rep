@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5BF02C43-D918-6D39-E62E-1EE7243927AC" name="CLIENTE_LOGIN">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>ADDEEEB3-EAD1-E5F9-334A-583134BD4991</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoLoginAcesso" id="F315C9F4-F76D-FB00-BD80-11F02C141707">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>51851CD1-13D5-3ED9-8D82-FB40A5274063</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dataAcesso" id="AFBDB086-0681-28E2-A6B2-418063BA00BA">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>1D704624-0017-B5EE-AFDE-3BD299A9AD1B</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENTE_codigoCliente" id="2C091FFD-3CCD-2FF8-10BE-B23D5C4C0FF0">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:20:52 UTC</createdTime>
+<generatorID>AF4D0F91-EF20-9BE0-EE57-07D90EE99B59</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CAD526F8-A845-4784-2BDC-FEAE34A781EC" referredColumn="94BB2CE9-A4BE-98A0-2A53-B6EB7659EB3E"/>
+</associations>
+</Column>
+<Column name="ACESSO_codigoAcesso" id="D82B4C31-46FD-30E4-596D-0681CF407EA8">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 01:26:54 UTC</createdTime>
+<generatorID>2CCD9A47-05AE-A4A3-6A6D-874735A3A532</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C801F803-65B1-ECBF-C3E1-AC3F42A28925" referredColumn="C20C51CE-7B17-806E-222F-600E4F332B6F"/>
+</associations>
+</Column>
+<Column name="LOGIN_codigoLogin" id="AE91D2C1-A0F0-210E-8265-E1AA8DE2BAAD">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 03:19:00 UTC</createdTime>
+<generatorID>670F5EAE-186E-BB54-566D-095E5A9B999C</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1C6457A-CBBA-BAB9-13E7-CA9BECCC0F95" referredColumn="7B90EA50-DB18-CA78-96B9-B24AD0BD2C86"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D2D2AA3-52F7-3D99-126B-9CA238A3238E" name="CLIENTE_LOGIN_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>A441A5C2-7212-B31B-E7DB-858D683C1DFD</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F315C9F4-F76D-FB00-BD80-11F02C141707"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E9EC47E-C6B9-A85E-4CF9-6C6861DEFCDD" name="CLIENTE_LOGIN__IDX">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:20:52 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E75F60CA-3C6F-03CE-83D9-FD18E42BC0F3</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="2C091FFD-3CCD-2FF8-10BE-B23D5C4C0FF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6BA048E-48A1-474E-41E5-C7CE04F321F4" name="CLIENTE_LOGIN__IDXv1">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 01:26:54 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>BFF88B3D-E4F2-4B6D-8AEF-5969EC20F9AF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D82B4C31-46FD-30E4-596D-0681CF407EA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9B368EC-6117-4234-06B2-F624C9EC615E" name="CLIENTE_LOGIN__IDXv2">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 03:19:00 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>ACA54E2C-41FD-B151-6AD1-C6DE8D5EE888</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="AE91D2C1-A0F0-210E-8265-E1AA8DE2BAAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE1253F2-D7D3-FC98-BD26-83933EF625A8" name="CLIENTE_LOGIN_CLIENTE_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:20:52 UTC</createdTime>
+<generatorID>E75F60CA-3C6F-03CE-83D9-FD18E42BC0F3</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C091FFD-3CCD-2FF8-10BE-B23D5C4C0FF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="693218E4-0EBF-9693-BFF2-96C94D3CA1FD" name="CLIENTE_LOGIN_ACESSO_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 01:26:54 UTC</createdTime>
+<generatorID>BFF88B3D-E4F2-4B6D-8AEF-5969EC20F9AF</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D82B4C31-46FD-30E4-596D-0681CF407EA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E2B9F28-97E9-1D3F-BF52-687150057F7D" name="CLIENTE_LOGIN_LOGIN_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 03:19:00 UTC</createdTime>
+<generatorID>ACA54E2C-41FD-B151-6AD1-C6DE8D5EE888</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE91D2C1-A0F0-210E-8265-E1AA8DE2BAAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

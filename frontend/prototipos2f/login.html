@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Alugue Agora</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+    <div id="banner">
+        <div class="container-fluid header-nav">
+            <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #006400;height:  37px;">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" style=" margin-right: -62px;">
+                        <li class="nav-item dropdown" style="color: white;height:  37px;margin-left: 20px;font-family: 'Open Sans', sans-serif;">
+                            <a class="nav-link dropdown-toggle" style="padding-right:  1em;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user" aria-hidden="true" style="color: white"></i>
+                                                    Dicas
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">
+                                <i class="fa fa-check" aria-hidden="true"></i>&nbsp; Conheça nosso site</a>
+                                <a class="dropdown-item" href="#">
+                                <i class="fa fa-money" aria-hidden="true"></i>&nbsp; Como ganhar um dinheiro extra</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown" style="margin-left: 20px;height:  37px;">
+                            <a class="nav-link dropdown-toggle" style="padding-right:  1em;" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-question-circle" aria-hidden="true" style="color: white"></i>
+                            Não encontrou o que procura?
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">
+                                <i class="fa fa-check" aria-hidden="true"></i>&nbsp; Faça uma proposta</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown" style="margin-left: 20px;height:  37px;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user" aria-hidden="true" style="color: white"></i>
+                            Seja um associado Black                          
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">
+                                <i class="fa fa-check" aria-hidden="true"></i>&nbsp; Benefícios</a>
+                                <a class="dropdown-item" href="#">
+                                <i class="fa fa-user" aria-hidden="true"></i>&nbsp; Para corretores</a>
+                                <a class="dropdown-item" href="#">
+                                <i class="fa fa-building" aria-hidden="true"></i>&nbsp; Para imobiliárias</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                <i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp; Perguntas frequentes</a>
+                            </div>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-nav-pesquisa" style="margin-left: -22px;">
+                    <ul style="margin-left: -57px;
+                        margin-right: 0px;
+                        margin-top: 15px;">
+                        <li class="nav-item" id="paddingleft0">
+                            <form class="form-inline my-2 my-lg-0 form-left " style="float: right">
+                                <input class="form-control mr-sm-2 col-10 " type="search" placeholder="Pesquise por Endereço ou Código do Imóvel" aria-label="Search" style="margin-bottom: 2px;font-size: 11px;line-height: 10px;width: 262px;">
+                                <button class="btn btn-lupa" type="submit"><i class="fa fa-search" aria-hidden="true" style="color:white"></i></button>
+                            </form>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+        <main class="container">
+            <section>
+                <div class="container" style="text-align: center;">
+                    <div class="card text-center" style="border: none">
+                        <div class="card-header">
+                            <h2>Olá, para anunciar grátis acesse sua conta!</h2>
+                        </div>
+                        <div class="card-body">
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Coloque seu nome e email</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Nome">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" placeholder="Email">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="cadastroimoveis.html"><button type="button" class="btn btn-success">Salvar</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section style="margin-left: 25rem;">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="main">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-login" data-toggle="modal" data-target="#myModal" 
+                                style="background-color: #A9A9A9 ;background-color: #A9A9A9;margin-bottom:  1em;">
+                              Sou novo aqui!
+                            </button>
+                            
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="inputUsernameEmail">Ou entre com sua conta AlugueAgora</label>
+                                    <input type="text" class="form-control" id="inputUsernameEmail"placeholder="Ex: seunome@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword">Digite sua senha   &nbsp; &nbsp;  <a  href="#" style="margin-left: 2em;">Esqueceu sua senha?</a></label>
+                                    <input type="password" class="form-control" id="inputPassword" >
+                                </div>
+                                <div class="checkbox pull-right">
+                                    <label style="margin-right: 11em;">
+                                    <input type="checkbox" placeholder="">
+                                    Me lembre a senha
+                                    </label>
+                                </div><br/>
+                                <button type="submit" class="btn btn-login" style="    margin-bottom: 1em;">
+                                  Entrar
+                                </button>
+                                <div class="form-group">
+                                    <label for="acesseRedesSociais">Acesse com o suas redes sociais</label>
+                                </div>
+                            </form>
+                            
+                            
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <a href="#" class="btn btn-lg btn-primary btn-block"><i class="fa fa-facebook"></i>&nbsp;Facebook</a>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <a href="#" class="btn btn-lg btn-danger btn-block"><i class="fa fa-google"></i>&nbsp;Google</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+        </main>
+
+
+
+        <footer class="footer" style="margin-top: 2em">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" style="color: #fff;"><i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp; Fale Conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login" style="color: #fff;"><i class="fa fa-laptop" aria-hidden="true"></i>&nbsp; Acesse sua conta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff;"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp; Perguntas frequentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff;"><i class="fa fa-flag" aria-hidden="true"></i>&nbsp; Envie sua proposta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff;"><i class="fa fa-home" aria-hidden="true"></i>&nbsp; Publique seu imovél</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff;"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; seja um associado black</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff;">Redes sociais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff;"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff;"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff;"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #fff"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+
+        <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            }
+        </script>
+
+
+        <script src="https://unpkg.com/popper.js"></script>
+        <script src="https://use.fontawesome.com/f8d4eea0a8.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

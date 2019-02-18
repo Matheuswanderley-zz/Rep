@@ -1,0 +1,533 @@
+--------------------------------------------------------
+--  Arquivo criado - Janeiro-09-2018   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table ACESSO
+--------------------------------------------------------
+
+  CREATE TABLE  "ACESSO" 
+   (    "CODIGO_ACESSO" NUMBER, 
+	"TIPO_ACESSO" VARCHAR2(50 BYTE)
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table AREA_COMUM
+--------------------------------------------------------
+
+  CREATE TABLE  "AREA_COMUM" 
+   (	"CODIGO_AREA_COMUM" NUMBER, 
+	"DESCRICAO_AREA_COMUM" VARCHAR2(50 BYTE)
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table CARACTERISTICAS
+--------------------------------------------------------
+
+  CREATE TABLE  "CARACTERISTICAS" 
+   (	"CODIGO_CARACTERISTICAS" NUMBER, 
+	"DESCRICAO_CARACTERISTICAS" VARCHAR2(50 BYTE)
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table CLIENTE
+--------------------------------------------------------
+
+  CREATE TABLE  "CLIENTE" 
+   (	"CODIGO_CLIENTE" NUMBER, 
+	"NOME" VARCHAR2(50 BYTE), 
+	"SOBRENOME" VARCHAR2(50 BYTE), 
+	"TELEFONE" NUMBER, 
+	"EMAIL" VARCHAR2(50 BYTE), 
+	"PAIS" VARCHAR2(50 BYTE), 
+	"REGIAO" VARCHAR2(50 BYTE), 
+	"ESTADO" VARCHAR2(50 BYTE), 
+	"CIDADE" VARCHAR2(50 BYTE), 
+	"BAIRRO" VARCHAR2(50 BYTE), 
+	"TIPO_LOGRADOURO" VARCHAR2(50 BYTE), 
+	"LOGRADOURO" VARCHAR2(50 BYTE), 
+	"NUMERO" NUMBER, 
+	"COMPLEMENTO" VARCHAR2(50 BYTE), 
+	"CEP" NUMBER, 
+	"AVALIACAO" NUMBER, 
+	"IMOVEL_CODIGO_IMOVEL" NUMBER
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table CLIENTE_LOGIN
+--------------------------------------------------------
+
+  CREATE TABLE  "CLIENTE_LOGIN" 
+   (	"CODIGO_CLIENTE_LOGIN" NUMBER, 
+	"DATA_ACESSO" DATE, 
+	"CLIENTE_CODIGO_CLIENTE" NUMBER, 
+	"ACESSO_CODIGO_ACESSO" NUMBER, 
+	"LOGIN_CODIGO_LOGIN" NUMBER
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table IMOVEL
+--------------------------------------------------------
+
+  CREATE TABLE  "IMOVEL" 
+   (	"CODIGO_IMOVEL" NUMBER, 
+	"DESCRICAO_IMOVEL" VARCHAR2(1200 BYTE), 
+	"TITULO_IMOVEL" VARCHAR2(120 BYTE),
+	"TELEFONE1" NUMBER, 
+	"TELEFONE2" NUMBER, 
+	"CELULAR" NUMBER, 
+	"EMAIL" VARCHAR2(50 BYTE), 
+	"AREA" NUMBER, 
+	"QUANTIDADE_DORMITORIOS" NUMBER, 
+	"QUANTIDADE_BANHEIROS" NUMBER, 
+	"QUANTIDADE_GARAGEM" NUMBER, 
+	"DISPONIBILIDADE" NUMBER, 
+	"VALOR_IMOVEL" NUMBER, 
+	"VALOR_IPTU" NUMBER, 
+	"VALOR_PACOTE" NUMBER, 
+	"VALOR_CONDOMINIO" NUMBER, 
+	"DATA_REGISTRO" DATE, 
+	"ANUNCIO" NUMBER, 
+	"OPORTUNIDADE" NUMBER, 
+	"DESTAQUE" NUMBER, 
+	"ENVIO_PLACA" NUMBER, 
+	"PREFERIDO" NUMBER, 
+	"IMOVEL_NEGOCIO" NUMBER, 
+	"IMOVEL_TIPO" NUMBER, 
+	"IMOVEL_PLACA" NUMBER
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table IMOVEL_AREA_COMUM
+--------------------------------------------------------
+
+  CREATE TABLE  "IMOVEL_AREA_COMUM" 
+   (	"CODIGO_IMOVEL_ACOMUM" NUMBER, 
+	"VALOR" NUMBER, 
+	"ACOMUM_CODIGO_ACOMUM" NUMBER, 
+	"CODIGO_IMOVEL" NUMBER
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table IMOVEL_CARACTERISTICAS
+--------------------------------------------------------
+
+  CREATE TABLE  "IMOVEL_CARACTERISTICAS" 
+   (	"CODIGO_IMOVEL_CARAC" NUMBER, 
+	"VALOR" NUMBER, 
+	"CARAC_CODIGO_CARAC" NUMBER, 
+	"CODIGO_IMOVEL" NUMBER
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table IMOVEL_ENDERECO
+--------------------------------------------------------
+
+  CREATE TABLE  "IMOVEL_ENDERECO" 
+   (	"CODIGO_IMOVEL_ENDERECO" NUMBER, 
+	"PAIS" VARCHAR2(50 BYTE), 
+	"REGIAO" VARCHAR2(50 BYTE), 
+	"ESTADO" VARCHAR2(50 BYTE), 
+	"CIDADE" VARCHAR2(50 BYTE), 
+	"BAIRRO" VARCHAR2(50 BYTE), 
+	"TIPO_LOGRADOURO" VARCHAR2(10 BYTE), 
+	"LOGRADOURO" VARCHAR2(50 BYTE), 
+	"NUMERO" NUMBER, 
+	"COMPLEMENTO" VARCHAR2(50 BYTE), 
+	"CEP" NUMBER, 
+	"TIPO_ENDERECO" NUMBER, 
+	"CODIGO_IMOVEL" NUMBER
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table IMOVEL_FOTOS
+--------------------------------------------------------
+
+  CREATE TABLE  "IMOVEL_FOTOS" 
+   (	"CODIGO_IMOVEL_FOTO" NUMBER, 
+	"URL_FOTO" VARCHAR2(50 BYTE), 
+	"CODIGO_IMOVEL" NUMBER
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table IMOVEL_NEGOCIO
+--------------------------------------------------------
+
+  CREATE TABLE  "IMOVEL_NEGOCIO" 
+   (	"CODIGO_IMOVEL_NEGOCIO" NUMBER, 
+	"CODIGO_NEGOCIO" NUMBER
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table IMOVEL_PAGAMENTO
+--------------------------------------------------------
+
+  CREATE TABLE  "IMOVEL_PAGAMENTO" 
+   (	"CODIGO_IMOVEL_PAGAMENTO" NUMBER, 
+	"VALOR_PAGAMENTO" NUMBER, 
+	"DATA_PAGAMENTO" DATE, 
+	"STATUS_PAGAMENTO" NUMBER, 
+	"CODIGO_IMOVEL" NUMBER
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table IMOVEL_PLACA
+--------------------------------------------------------
+
+  CREATE TABLE  "IMOVEL_PLACA" 
+   (	"CODIGO_IMOVEL_PLACA" NUMBER, 
+	"QRCODE" VARCHAR2(50 BYTE)
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table IMOVEL_TIPO
+--------------------------------------------------------
+
+  CREATE TABLE  "IMOVEL_TIPO" 
+   (	"CODIGO_IMOVEL_TIPO" NUMBER, 
+	"CODIGO_TIPO" NUMBER
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table LOGIN
+--------------------------------------------------------
+
+  CREATE TABLE  "LOGIN" 
+   (	"CODIGO_LOGIN" NUMBER, 
+	"NOME" VARCHAR2(50 BYTE), 
+	"PASSWORD" VARCHAR2(50 BYTE)
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table NEGOCIO
+--------------------------------------------------------
+
+  CREATE TABLE  "NEGOCIO" 
+   (	"CODIGO_NEGOCIO" NUMBER, 
+	"DESCRICAO_NEGOCIO" VARCHAR2(50 BYTE)
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table TIPO
+--------------------------------------------------------
+
+  CREATE TABLE  "TIPO" 
+   (	"CODIGO_TIPO" NUMBER, 
+	"DESCRICAO_TIPO" VARCHAR2(50 BYTE)
+   ) 
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Sequence ACESSO_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "ACESSO_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence AREA_COMUM_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "AREA_COMUM_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence CARACTERISTICAS_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "CARACTERISTICAS_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence CLIENTE_LOGIN_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "CLIENTE_LOGIN_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence CLIENTE_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "CLIENTE_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence IMOVEL_AREA_COMUM_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "IMOVEL_AREA_COMUM_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence IMOVEL_CARACTERISTICAS_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "IMOVEL_CARACTERISTICAS_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence IMOVEL_ENDERECO_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "IMOVEL_ENDERECO_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence IMOVEL_FOTOS_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "IMOVEL_FOTOS_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence IMOVEL_NEGOCIO_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "IMOVEL_NEGOCIO_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence IMOVEL_PAGAMENTO_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "IMOVEL_PAGAMENTO_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence IMOVEL_PLACA_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "IMOVEL_PLACA_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence IMOVEL_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "IMOVEL_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence IMOVEL_TIPO_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "IMOVEL_TIPO_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence LOGIN_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "LOGIN_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence NEGOCIO_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE   "NEGOCIO_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+--------------------------------------------------------
+--  DDL for Sequence TIPO_SEQ
+--------------------------------------------------------
+
+-----------------------------
+   CREATE SEQUENCE   "TIPO_SEQ" INCREMENT BY 1 START WITH 1000 NOCACHE NOCYCLE;
+
+
+Insert into   ACESSO (CODIGO_ACESSO,TIPO_ACESSO) values ('1','ADMINISTRADOR');
+Insert into   ACESSO (CODIGO_ACESSO,TIPO_ACESSO) values ('2','FINANCEIRO');
+Insert into   ACESSO (CODIGO_ACESSO,TIPO_ACESSO) values ('3','USUARIO');
+
+Insert into   AREA_COMUM (CODIGO_AREA_COMUM,DESCRICAO_AREA_COMUM) values ('1','ACADEMIA');
+Insert into   AREA_COMUM (CODIGO_AREA_COMUM,DESCRICAO_AREA_COMUM) values ('2','PISCINA');
+Insert into   AREA_COMUM (CODIGO_AREA_COMUM,DESCRICAO_AREA_COMUM) values ('3','PLAYGROUND');
+Insert into   AREA_COMUM (CODIGO_AREA_COMUM,DESCRICAO_AREA_COMUM) values ('4','QUADRA POLIESPORTIVA');
+Insert into   AREA_COMUM (CODIGO_AREA_COMUM,DESCRICAO_AREA_COMUM) values ('5','SAL�O DE FESTAS');
+Insert into   AREA_COMUM (CODIGO_AREA_COMUM,DESCRICAO_AREA_COMUM) values ('6','CHURRASQUEIRA');
+
+Insert into   CARACTERISTICAS (CODIGO_CARACTERISTICAS,DESCRICAO_CARACTERISTICAS) values ('1','ARM�RIO DE COZINHA');
+Insert into   CARACTERISTICAS (CODIGO_CARACTERISTICAS,DESCRICAO_CARACTERISTICAS) values ('2','ARM�RIO EMBUTIDO');
+Insert into   CARACTERISTICAS (CODIGO_CARACTERISTICAS,DESCRICAO_CARACTERISTICAS) values ('3','GUARDA ROUPAS');
+Insert into   CARACTERISTICAS (CODIGO_CARACTERISTICAS,DESCRICAO_CARACTERISTICAS) values ('4','MOBILIADO');
+Insert into   CARACTERISTICAS (CODIGO_CARACTERISTICAS,DESCRICAO_CARACTERISTICAS) values ('5','ESCRITORIO');
+Insert into   CARACTERISTICAS (CODIGO_CARACTERISTICAS,DESCRICAO_CARACTERISTICAS) values ('6','VARANDA');
+
+Insert into   NEGOCIO (CODIGO_NEGOCIO,DESCRICAO_NEGOCIO) values ('1','LOCA��O');
+Insert into   NEGOCIO (CODIGO_NEGOCIO,DESCRICAO_NEGOCIO) values ('2','VENDA');
+
+Insert into   TIPO (CODIGO_TIPO,DESCRICAO_TIPO) values ('1','CASA');
+Insert into   TIPO (CODIGO_TIPO,DESCRICAO_TIPO) values ('2','APARTAMENTO');
+Insert into   TIPO (CODIGO_TIPO,DESCRICAO_TIPO) values ('3','FLAT');
+Insert into   TIPO (CODIGO_TIPO,DESCRICAO_TIPO) values ('4','SOBRADO');
+Insert into   TIPO (CODIGO_TIPO,DESCRICAO_TIPO) values ('5','TERRENO');
+--------------------------------------------------------
+--  DDL for Index ACESSO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "ACESSO_PK" ON  "ACESSO" ("CODIGO_ACESSO") ;
+--------------------------------------------------------
+--  DDL for Index AREA_COMUM_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "AREA_COMUM_PK" ON  "AREA_COMUM" ("CODIGO_AREA_COMUM") ;
+--------------------------------------------------------
+--  DDL for Index CARACTERISTICAS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "CARACTERISTICAS_PK" ON  "CARACTERISTICAS" ("CODIGO_CARACTERISTICAS") ;
+--------------------------------------------------------
+--  DDL for Index CLIENTE_LOGIN_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "CLIENTE_LOGIN_PK" ON  "CLIENTE_LOGIN" ("CODIGO_CLIENTE_LOGIN") ;
+--------------------------------------------------------
+--  DDL for Index CLIENTE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "CLIENTE_PK" ON  "CLIENTE" ("CODIGO_CLIENTE");
+--------------------------------------------------------
+--  DDL for Index IMOVEL_CARACTERISTICAS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "IMOVEL_CARACTERISTICAS_PK" ON  "IMOVEL_CARACTERISTICAS" ("CODIGO_IMOVEL_CARAC") ;
+--------------------------------------------------------
+--  DDL for Index IMOVEL_ENDERECO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "IMOVEL_ENDERECO_PK" ON  "IMOVEL_ENDERECO" ("CODIGO_IMOVEL_ENDERECO") ;
+--------------------------------------------------------
+--  DDL for Index IMOVEL_FOTOS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "IMOVEL_FOTOS_PK" ON  "IMOVEL_FOTOS" ("CODIGO_IMOVEL_FOTO");
+--------------------------------------------------------
+--  DDL for Index IMOVEL_NEGOCIO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "IMOVEL_NEGOCIO_PK" ON  "IMOVEL_NEGOCIO" ("CODIGO_IMOVEL_NEGOCIO")  ;
+--------------------------------------------------------
+--  DDL for Index IMOVEL_PAGAMENTO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "IMOVEL_PAGAMENTO_PK" ON  "IMOVEL_PAGAMENTO" ("CODIGO_IMOVEL_PAGAMENTO") ;
+--------------------------------------------------------
+--  DDL for Index IMOVEL_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "IMOVEL_PK" ON  "IMOVEL" ("CODIGO_IMOVEL") ;
+--------------------------------------------------------
+--  DDL for Index IMOVEL_PLACA_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "IMOVEL_PLACA_PK" ON  "IMOVEL_PLACA" ("CODIGO_IMOVEL_PLACA");
+--------------------------------------------------------
+--  DDL for Index IMOVEL_TIPO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "IMOVEL_TIPO_PK" ON  "IMOVEL_TIPO" ("CODIGO_IMOVEL_TIPO");
+--------------------------------------------------------
+--  DDL for Index LOGIN_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "LOGIN_PK" ON  "LOGIN" ("CODIGO_LOGIN");
+--------------------------------------------------------
+--  DDL for Index NEGOCIO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "NEGOCIO_PK" ON  "NEGOCIO" ("CODIGO_NEGOCIO");
+--------------------------------------------------------
+--  DDL for Index TIPO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX  "TIPO_PK" ON  "TIPO" ("CODIGO_TIPO");
+
+--------------------------------------------------------
+--  Constraints for Table IMOVEL_NEGOCIO
+--------------------------------------------------------
+
+  ALTER TABLE  "IMOVEL_NEGOCIO" MODIFY ("CODIGO_IMOVEL_NEGOCIO" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL_NEGOCIO" MODIFY ("CODIGO_NEGOCIO" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL_NEGOCIO" ADD CONSTRAINT "IMOVEL_NEGOCIO_PK" PRIMARY KEY ("CODIGO_IMOVEL_NEGOCIO");
+--------------------------------------------------------
+--  Constraints for Table IMOVEL_PAGAMENTO
+--------------------------------------------------------
+
+  ALTER TABLE  "IMOVEL_PAGAMENTO" MODIFY ("CODIGO_IMOVEL_PAGAMENTO" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL_PAGAMENTO" ADD CONSTRAINT "IMOVEL_PAGAMENTO_PK" PRIMARY KEY ("CODIGO_IMOVEL_PAGAMENTO");
+--------------------------------------------------------
+--  Constraints for Table ACESSO
+--------------------------------------------------------
+
+  ALTER TABLE  "ACESSO" MODIFY ("CODIGO_ACESSO" NOT NULL ENABLE);
+  ALTER TABLE  "ACESSO" ADD CONSTRAINT "ACESSO_PK" PRIMARY KEY ("CODIGO_ACESSO");
+--------------------------------------------------------
+--  Constraints for Table CARACTERISTICAS
+--------------------------------------------------------
+
+  ALTER TABLE  "CARACTERISTICAS" MODIFY ("CODIGO_CARACTERISTICAS" NOT NULL ENABLE);
+  ALTER TABLE  "CARACTERISTICAS" ADD CONSTRAINT "CARACTERISTICAS_PK" PRIMARY KEY ("CODIGO_CARACTERISTICAS");
+--------------------------------------------------------
+--  Constraints for Table CLIENTE
+--------------------------------------------------------
+
+  ALTER TABLE  "CLIENTE" MODIFY ("CODIGO_CLIENTE" NOT NULL ENABLE);
+  ALTER TABLE  "CLIENTE" MODIFY ("IMOVEL_CODIGO_IMOVEL" NOT NULL ENABLE);
+  ALTER TABLE  "CLIENTE" ADD CONSTRAINT "CLIENTE_PK" PRIMARY KEY ("CODIGO_CLIENTE");
+--------------------------------------------------------
+--  Constraints for Table IMOVEL_TIPO
+--------------------------------------------------------
+
+  ALTER TABLE  "IMOVEL_TIPO" MODIFY ("CODIGO_IMOVEL_TIPO" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL_TIPO" MODIFY ("CODIGO_TIPO" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL_TIPO" ADD CONSTRAINT "IMOVEL_TIPO_PK" PRIMARY KEY ("CODIGO_IMOVEL_TIPO");
+--------------------------------------------------------
+--  Constraints for Table TIPO
+--------------------------------------------------------
+
+  ALTER TABLE  "TIPO" MODIFY ("CODIGO_TIPO" NOT NULL ENABLE);
+  ALTER TABLE  "TIPO" ADD CONSTRAINT "TIPO_PK" PRIMARY KEY ("CODIGO_TIPO");
+--------------------------------------------------------
+--  Constraints for Table LOGIN
+--------------------------------------------------------
+
+  ALTER TABLE  "LOGIN" MODIFY ("CODIGO_LOGIN" NOT NULL ENABLE);
+  ALTER TABLE  "LOGIN" ADD CONSTRAINT "LOGIN_PK" PRIMARY KEY ("CODIGO_LOGIN");
+--------------------------------------------------------
+--  Constraints for Table IMOVEL_ENDERECO
+--------------------------------------------------------
+
+  ALTER TABLE  "IMOVEL_ENDERECO" MODIFY ("CODIGO_IMOVEL_ENDERECO" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL_ENDERECO" MODIFY ("TIPO_ENDERECO" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL_ENDERECO" ADD CONSTRAINT "IMOVEL_ENDERECO_PK" PRIMARY KEY ("CODIGO_IMOVEL_ENDERECO");
+--------------------------------------------------------
+--  Constraints for Table NEGOCIO
+--------------------------------------------------------
+
+  ALTER TABLE  "NEGOCIO" MODIFY ("CODIGO_NEGOCIO" NOT NULL ENABLE);
+  ALTER TABLE  "NEGOCIO" ADD CONSTRAINT "NEGOCIO_PK" PRIMARY KEY ("CODIGO_NEGOCIO");
+--------------------------------------------------------
+--  Constraints for Table AREA_COMUM
+--------------------------------------------------------
+
+  ALTER TABLE  "AREA_COMUM" MODIFY ("CODIGO_AREA_COMUM" NOT NULL ENABLE);
+  ALTER TABLE  "AREA_COMUM" ADD CONSTRAINT "AREA_COMUM_PK" PRIMARY KEY ("CODIGO_AREA_COMUM");
+--------------------------------------------------------
+--  Constraints for Table IMOVEL_CARACTERISTICAS
+--------------------------------------------------------
+
+  ALTER TABLE  "IMOVEL_CARACTERISTICAS" MODIFY ("CODIGO_IMOVEL_CARAC" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL_CARACTERISTICAS" MODIFY ("CARAC_CODIGO_CARAC" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL_CARACTERISTICAS" ADD CONSTRAINT "IMOVEL_CARACTERISTICAS_PK" PRIMARY KEY ("CODIGO_IMOVEL_CARAC");
+--------------------------------------------------------
+--  Constraints for Table CLIENTE_LOGIN
+--------------------------------------------------------
+
+  ALTER TABLE  "CLIENTE_LOGIN" MODIFY ("CODIGO_CLIENTE_LOGIN" NOT NULL ENABLE);
+  ALTER TABLE  "CLIENTE_LOGIN" MODIFY ("CLIENTE_CODIGO_CLIENTE" NOT NULL ENABLE);
+  ALTER TABLE  "CLIENTE_LOGIN" MODIFY ("ACESSO_CODIGO_ACESSO" NOT NULL ENABLE);
+  ALTER TABLE  "CLIENTE_LOGIN" MODIFY ("LOGIN_CODIGO_LOGIN" NOT NULL ENABLE);
+  ALTER TABLE  "CLIENTE_LOGIN" ADD CONSTRAINT "CLIENTE_LOGIN_PK" PRIMARY KEY ("CODIGO_CLIENTE_LOGIN");
+--------------------------------------------------------
+--  Constraints for Table IMOVEL_FOTOS
+--------------------------------------------------------
+
+  ALTER TABLE  "IMOVEL_FOTOS" MODIFY ("CODIGO_IMOVEL_FOTO" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL_FOTOS" ADD CONSTRAINT "IMOVEL_FOTOS_PK" PRIMARY KEY ("CODIGO_IMOVEL_FOTO");
+--------------------------------------------------------
+--  Constraints for Table IMOVEL
+--------------------------------------------------------
+
+  ALTER TABLE  "IMOVEL" MODIFY ("CODIGO_IMOVEL" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL" MODIFY ("IMOVEL_NEGOCIO" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL" MODIFY ("IMOVEL_TIPO" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL" ADD CONSTRAINT "IMOVEL_PK" PRIMARY KEY ("CODIGO_IMOVEL");
+--------------------------------------------------------
+--  Constraints for Table IMOVEL_AREA_COMUM
+--------------------------------------------------------
+
+  ALTER TABLE  "IMOVEL_AREA_COMUM" MODIFY ("CODIGO_IMOVEL_ACOMUM" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL_AREA_COMUM" MODIFY ("ACOMUM_CODIGO_ACOMUM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table IMOVEL_PLACA
+--------------------------------------------------------
+
+  ALTER TABLE  "IMOVEL_PLACA" MODIFY ("CODIGO_IMOVEL_PLACA" NOT NULL ENABLE);
+  ALTER TABLE  "IMOVEL_PLACA" ADD CONSTRAINT "IMOVEL_PLACA_PK" PRIMARY KEY ("CODIGO_IMOVEL_PLACA");
+--------------------------------------------------------
+--  Ref Constraints for Table IMOVEL
+--------------------------------------------------------
+
+  ALTER TABLE  "IMOVEL" ADD CONSTRAINT "IMOVEL_TIPO_FK" FOREIGN KEY ("IMOVEL_TIPO")
+	  REFERENCES  "IMOVEL_TIPO" ("CODIGO_IMOVEL_TIPO") ENABLE;
+	  
+  ALTER TABLE  "IMOVEL" ADD CONSTRAINT "IMOVEL_NEGOCIO_FK" FOREIGN KEY ("IMOVEL_NEGOCIO")
+	  REFERENCES  "IMOVEL_NEGOCIO" ("CODIGO_IMOVEL_NEGOCIO") ENABLE;

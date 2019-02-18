@@ -1,0 +1,117 @@
+<section class="imoveis detalhe">
+
+  <div>
+
+    <div class="container">
+
+      <div class="list">
+
+        <div class="row">
+
+          <div class="col s12 m5 img-grande">
+            <img src="https://loremflickr.com/330/330/house/?lock={{i}}" alt="">
+          </div>
+
+          <div class="col s12 m7 info">
+
+            <h3>Título do Imovel{{imovel.tituloImovel}}</h3>
+            <p>{{imovel.imovelEnderecos.logradouro}}, {{imovel.imovelEnderecos.numero}}</p>
+
+            <div class="infos">
+
+              <p>
+                <i class="fa fa-map-marker fa-2" aria-hidden="true"></i><span>{{imovel.imovelEnderecos.bairro}}</span>
+                <i class="fa fa-home fa-2" aria-hidden="true"></i><span>Apartamento</span>
+                <span class="iptu">
+                      <span class="bold">IPTU:</span> {{imovel.valorIptu}}</span>
+                <i class="fa fa-expand fa-2" aria-hidden="true"></i><span> {{imovel.areaImovel}}</span>
+                <i class="fa fa-bed fa-2" aria-hidden="true"></i><span>{{imovel.quantidadeDormitorios}}</span>
+                <span>Condomínio:</span> {{imovel.valorCondominio}}
+              </p>
+
+              <p class="detalhes text">Descricao do imovel{{imovel.descricaoImovel}}</p>
+
+            </div>
+
+            <div class="contact">
+              <p class="col s6">
+                <strong>CONTATO:</strong><br>
+                Nome: Giuseppe Gozzi<br>
+                Email: giuseppe@gmail.com<br>
+              </p>
+              <p class="col s6">
+                <strong class="price">R$ 857.000,00{{imovel.imovelPagamentos.valorpagamento}}</strong>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="col s12 m7 imagens">
+
+            <span class="img-upload"><img src="https://loremflickr.com/330/330/house/?random=1" alt=""></span>
+            <span class="img-upload"><img src="https://loremflickr.com/330/330/house/?random=2" alt=""></span>
+            <span class="img-upload"><img src="https://loremflickr.com/330/330/house/?random=3" alt=""></span>
+            <span class="img-upload"><img src="https://loremflickr.com/330/330/house/?random=4" alt=""></span>
+
+          </div>
+
+          <div class="col s12 m12 box-contato">
+            <div class="row">
+              <div class="col s8">
+                <div class="col s6"><span class="oZ"><strong>Fale com o anunciante</strong></span>
+                  <div class="ao">
+                    <form action="#">
+                      <fieldset>
+                        <div class="dU">
+                          <div class="px pB">
+                            <div class="pl">
+                              <div class="input-field">
+                                <input  class="" id="nome" required="required" type="text">
+                                <label class="" for="nome">Nome</label>
+                              </div>
+                              <div class="input-field">
+                                <input  class="" id="email" required="required"  type="text">
+                                <label class="" for="email">E-mail</label>
+                              </div>
+                              <div class="input-field">
+                                <input class=""  id="telefone" maxlength="15" pattern="[0-9]*" type="text">
+                                <label class="" for="telefone">Telefone</label>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </fieldset>
+                    </form>
+                  </div>
+            </div>
+                <div class="col s6 input-field">
+                  <textarea class="materialize-textarea mensagem" data-length="500">Olá, tenho interesse neste imóvel:</textarea>
+                  <button class="right waves-effect waves-light btn contatar-anunciante" routerLink="/anuncie">Contatar anunciante</button>
+                </div>
+
+              </div>
+              <p class="col s4 botoes">
+                <a href="" class="waves-effect waves-light btn cinza"><i class="fa fa-phone" aria-hidden="true"></i>(11) 99584-5878</a>
+                <a href=""  class="waves-effect waves-light btn whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i>Whatsapp</a>
+              </p>
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+</section>

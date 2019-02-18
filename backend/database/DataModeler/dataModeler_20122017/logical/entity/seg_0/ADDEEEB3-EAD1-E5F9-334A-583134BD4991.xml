@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ADDEEEB3-EAD1-E5F9-334A-583134BD4991" name="CLIENTE_LOGIN">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:16:06 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigoLoginAcesso" id="51851CD1-13D5-3ED9-8D82-FB40A5274063">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:16:17 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dataAcesso" id="1D704624-0017-B5EE-AFDE-3BD299A9AD1B">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:16:36 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoCliente" id="AF4D0F91-EF20-9BE0-EE57-07D90EE99B59">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:20:03 UTC</createdTime>
+<generatorID>E75F60CA-3C6F-03CE-83D9-FD18E42BC0F3</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<referedAttribute>9749CF3A-379C-B2C4-D2EE-A134C6AC17F0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoAcesso" id="2CCD9A47-05AE-A4A3-6A6D-874735A3A532">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 01:26:34 UTC</createdTime>
+<generatorID>BFF88B3D-E4F2-4B6D-8AEF-5969EC20F9AF</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<referedAttribute>FFE86983-9033-ADB7-685A-CD29B268D287</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoLogin" id="670F5EAE-186E-BB54-566D-095E5A9B999C">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 03:18:31 UTC</createdTime>
+<generatorID>ACA54E2C-41FD-B151-6AD1-C6DE8D5EE888</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<referedAttribute>74EC3EC7-4A0D-8BD0-2775-4357218CAC19</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A441A5C2-7212-B31B-E7DB-858D683C1DFD" name="LOGIN_ACESSO PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:16:34 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>51851CD1-13D5-3ED9-8D82-FB40A5274063</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

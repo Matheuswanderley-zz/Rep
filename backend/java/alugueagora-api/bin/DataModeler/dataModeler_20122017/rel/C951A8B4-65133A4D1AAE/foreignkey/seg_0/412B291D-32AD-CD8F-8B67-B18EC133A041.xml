@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="412B291D-32AD-CD8F-8B67-B18EC133A041" containerWithKeyObject="19AFED0E-ED12-2633-60D0-34A4CF29313E" localFKIndex="2CA28D27-AC49-9D27-CCD5-3BBD4492ACAF" name="CLIENTE_IMOVEL_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:20:52 UTC</createdTime>
+<generatorID>93D0626C-1CFE-B317-E686-924F12966336</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<referredTableLongName>IMOVEL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C3373BCF-53DC-90A3-7B69-89C2ACE31DD4</referredTableID>
+<keyObject>9B7148A0-1C88-E28D-C913-34964E898E39</keyObject>
+<referredKeyID>9B7148A0-1C88-E28D-C913-34964E898E39</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoImovel</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

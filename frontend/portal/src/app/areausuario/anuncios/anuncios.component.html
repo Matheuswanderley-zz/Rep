@@ -1,0 +1,213 @@
+<section class="container anuncios content-pages">
+
+  <div id="modal-reativar" class="modal" style="height: 26% !important;">
+    <div class="modal-content">
+      <div class="row">
+        <div class="input-field col s12 center">
+          <p style="margin-bottom: 7px;">Deseja editar seu anúncio antes de reativá-lo?</p>
+        </div>
+        <div class="input-field col s6">
+          <a href="/anuncie" class="modal-action modal-close waves-effect waves-green btn">Editar</a>
+        </div>
+        <div class="input-field col s6">
+          <button class="modal-action waves-effect waves-green btn modal-close modal-trigger" data-target="modal-ok" (click)="reativaAnuncio()">Reativar</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="modal-action modal-close waves-effect waves-green btn-flat">Voltar</button>
+    </div>
+  </div>
+
+  <div id="modal-ok" class="modal" style="height: 22% !important;">
+    <div class="modal-content">
+      <div class="row">
+        <div class="input-field col s12 center">
+          <p>Seu anúncio foi reativado com sucesso!</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="modal-action modal-close waves-effect waves-green btn-flat btn-ok">OK</button>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col m3 s3">
+
+        <ul class="user-menu">
+          <ul class="user-menu">
+            <li><a href="/anuncie" class="waves-effect waves-light btn btn-small"><i class="small material-icons">chat</i> Anuncie</a></li>
+            <li><a href="/usuario/anuncios"  class="active waves-effect waves-light btn btn-small"><i class="small material-icons">chat_bubble</i>Meus anúncios</a></li>
+            <li><a href="/usuario/propostas"  class="waves-effect waves-light btn btn-small" ><i class="small material-icons">attach_money</i>Minhas propostas</a></li>
+            <li><a href="/usuario/avaliacao"  class="waves-effect waves-light btn btn-small"><i class="small material-icons">event_available</i>Avaliação</a></li>
+            <li><a href="/usuario/avaliacao/associados" class="waves-effect waves-light btn btn-small"><i class="small material-icons">contacts</i>Fale conosco</a></li>
+          </ul>
+        </ul>
+
+    </div>
+
+    <div class="col m9 s9">
+
+      <div class="imoveis">
+
+        <div class="row">
+          <div class="col s12">
+            <strong class="sub">Meus anúncios</strong>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="row">
+            <!--<div class="col s12 m3 l3 img">-->
+              <!--<img src="assets/images/imovel.png" alt="">-->
+            <!--</div>-->
+            <div class="col s12 m8">
+              <h3>Jardim das Maravilhas</h3>
+              <p>Rua Dom Lucas Obes, 1213</p>
+              <div class="infos">
+
+                <p><i class="fa fa-map-marker fa-2" aria-hidden="true"></i><span>Ipiranga</span></p>
+                <p><i class="fa fa-home fa-2" aria-hidden="true"></i><span>Apartamento</span></p>
+                <p><span class="iptu">
+                      <span class="bold">IPTU:</span> R$ 3.600,00</span>
+                </p>
+
+                <p><i class="fa fa-expand fa-2" aria-hidden="true"></i><span>190m2</span></p>
+                <p><i class="fa fa-bed fa-2" aria-hidden="true"></i><span>4 dorms</span><p>
+                <p><span>Condomínio:</span> R$ 1.890,00</p>
+
+              </div>
+
+            </div>
+
+            <div class="col s12 m4 l4 last">
+              <p class="expirando">Anúncio gratuito</p>
+              <p class="expira">Expira em 7 dias - <a href="/anuncie">RECADASTRAR</a></p>
+              <p class="preco"><strong class="price">R$ 265.000</strong></p>
+              <p class="opcao">
+                <button class="btn waves-effect waves-light remove" type="submit" name="action">
+                  Remover</button>
+                <a href="/anuncie" class="btn waves-effect waves-light remove" type="submit" name="action">
+                  Editar</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="list">
+          <div class="row">
+            <!--<div class="col s12 m3 l3 img">-->
+              <!--<img src="assets/images/imovel.png" alt="">-->
+            <!--</div>-->
+            <div class="col s12 m8">
+              <h3>Jardim das Maravilhas</h3>
+              <p>Rua Dom Lucas Obes, 1213</p>
+              <div class="infos">
+
+                <p><i class="fa fa-map-marker fa-2" aria-hidden="true"></i><span>Ipiranga</span></p>
+                <p><i class="fa fa-home fa-2" aria-hidden="true"></i><span>Apartamento</span></p>
+                <p><span class="iptu">
+                      <span class="bold">IPTU:</span> R$ 3.600,00</span>
+                </p>
+
+                <p><i class="fa fa-expand fa-2" aria-hidden="true"></i><span>190m2</span></p>
+                <p><i class="fa fa-bed fa-2" aria-hidden="true"></i><span>4 dorms</span><p>
+                <p><span>Condomínio:</span> R$ 1.890,00</p>
+
+              </div>
+
+            </div>
+
+            <div class="col s12 m4 l4 last">
+              <p class="expirando">Anúncio pago</p>
+              <p class="expira">Expira em 28 dias</p>
+              <p class="preco"><strong class="price">R$ 265.000</strong></p>
+              <p class="opcao">
+                <button class="btn waves-effect waves-light remove" type="submit" name="action">
+                  Remover</button>
+                <a href="/anuncie" class="btn waves-effect waves-light remove" type="submit" name="action">
+                  Editar</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list" style="opacity: 0.5;">
+          <div class="row">
+            <!--<div class="col s12 m3 l3 img">-->
+              <!--<img src="assets/images/imovel.png" alt="">-->
+            <!--</div>-->
+            <div class="col s12 m8">
+              <h3>Jardim das Maravilhas</h3>
+              <p>Rua Dom Lucas Obes, 1213</p>
+              <div class="infos">
+
+                <p><i class="fa fa-map-marker fa-2" aria-hidden="true"></i><span>Ipiranga</span></p>
+                <p><i class="fa fa-home fa-2" aria-hidden="true"></i><span>Apartamento</span></p>
+                <p><span class="iptu">
+                      <span class="bold">IPTU:</span> R$ 3.600,00</span>
+                </p>
+
+                <p><i class="fa fa-expand fa-2" aria-hidden="true"></i><span>190m2</span></p>
+                <p><i class="fa fa-bed fa-2" aria-hidden="true"></i><span>4 dorms</span><p>
+                <p><span>Condomínio:</span> R$ 1.890,00</p>
+
+              </div>
+
+            </div>
+
+            <div class="col s12 m4 l4 last">
+              <p class="expirando">Anúncio expirado</p>
+              <p class="preco"><strong class="price">R$ 265.000</strong></p>
+              <p class="opcao">
+                <button class="btn waves-effect waves-light reativar modal-trigger" data-target="modal-reativar" type="submit" name="action">
+                  Reativar</button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list" style="opacity: 0.5;">
+          <div class="row">
+            <!--<div class="col s12 m3 l3 img">-->
+              <!--<img src="assets/images/imovel.png" alt="">-->
+            <!--</div>-->
+            <div class="col s12 m8">
+              <h3>Jardim das Maravilhas</h3>
+              <p>Rua Dom Lucas Obes, 1213</p>
+              <div class="infos">
+
+                <p><i class="fa fa-map-marker fa-2" aria-hidden="true"></i><span>Ipiranga</span></p>
+                <p><i class="fa fa-home fa-2" aria-hidden="true"></i><span>Apartamento</span></p>
+                <p><span class="iptu">
+                      <span class="bold">IPTU:</span> R$ 3.600,00</span>
+                </p>
+
+                <p><i class="fa fa-expand fa-2" aria-hidden="true"></i><span>190m2</span></p>
+                <p><i class="fa fa-bed fa-2" aria-hidden="true"></i><span>4 dorms</span><p>
+                <p><span>Condomínio:</span> R$ 1.890,00</p>
+
+              </div>
+
+            </div>
+
+            <div class="col s12 m4 l4 last">
+              <p class="expirando">Anúncio expirado</p>
+              <p class="preco"><strong class="price">R$ 265.000</strong></p>
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A321CC94-1BC6-8417-BF5E-BDB3CF2927CE" containerWithKeyObject="DB538524-253D-BE9B-5088-A86414CE23EB" localFKIndex="C1650772-9574-DBE9-B163-507B1B92038F" name="IMOVEL_TIPO_TIPO_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 01:26:54 UTC</createdTime>
+<generatorID>8B9A288B-6B2B-C783-5521-76B0762B6A24</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<referredTableLongName>TIPO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>30866D96-4253-F72D-CA47-468AA55B8A26</referredTableID>
+<keyObject>DC5A6150-5B4A-383C-DC9E-C59377F939E3</keyObject>
+<referredKeyID>DC5A6150-5B4A-383C-DC9E-C59377F939E3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoTipo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

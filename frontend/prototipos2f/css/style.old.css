@@ -1,0 +1,313 @@
+checksize{
+    width: 1em;
+    height: 1em;
+}
+.green{
+    background-color: #A9A9A9 !important;
+    border-color: #A9A9A9 !important;
+    
+}
+.header-nav{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.form-inline {
+    padding-left: 1em;
+}
+.card-img-bottom {
+    color: #fff;
+    height: 20rem;
+    background: url(/imagens/dummyimage.jpg) center no-repeat;
+    background-size: cover;
+}
+
+div.jumbotron {
+    background-image: url(../imagens/herobanner.jpg);
+    background-position: 0% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background: blue;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.button {
+    display: inline-block;
+    background: #218838;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+.button:hover {
+    background-color: #218838;
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+    transform: translate(0px, -10px) scale(1.2);
+}
+
+.button2 {
+    display: inline-block;
+    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+}
+
+.button2:hover {
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+    transform: translate(0px, -10px) scale(1.2);
+}
+
+.button3 {
+    display: inline-block;
+    background: red;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+.button3:hover {
+    background-color: green;
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+    transform: translate(0px, -10px) scale(1.2);
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    background-size: 100%, 100%;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: white;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: white;
+}
+
+ul li:last-child {
+    border-bottom: 0;
+}
+
+li {
+    border: none;
+    list-style: none;
+    border-color: black;
+}
+
+.footer {
+    position: relative;
+    /* negative value of footer height */
+    clear: both;
+    padding-top: 20px;
+    background-color: black;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* upload imagem */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
+/* barra de progresso */
+.progress-bars {
+	height: 25px;
+}
+/* login */
+
+.white {
+    color: #000;
+    background-color: #fff;
+}
+.alinha-cards-imoveis {
+    padding-left: 4em;
+    padding-bottom: 3em;
+    margin-right: 14em;
+}
+.btn-facebook {
+    color: #ffffff;
+    -webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #2b4b90;
+    *background-color: #133783;
+    background-image: -moz-linear-gradient(top, #3b5998, #133783);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3b5998), to(#133783));
+    background-image: -webkit-linear-gradient(top, #3b5998, #133783);
+    background-image: -o-linear-gradient(top, #3b5998, #133783);
+    background-image: linear-gradient(to bottom, #3b5998, #133783);
+    background-repeat: repeat-x;
+    border-color: #133783 #133783 #091b40;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3b5998', endColorstr='#ff133783', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook:active,
+.btn-facebook.active,
+.btn-facebook.disabled,
+.btn-facebook[disabled] {
+    color: #ffffff;
+    background-color: #133783 !important;
+    *background-color: #102e6d !important;
+}
+
+.btn-facebook.active {
+    background-color: #0d2456 \9 !important;
+}
+.central {
+	margin-left: 2em;
+    text-align: center;
+    padding: 1em;
+}
+.centralizar{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (min-width: 1200px) {
+    @import url(style.css);
+     
+.footer-bottom {
+        position: relative;
+    }
+    .footer-bottom1 {
+        position: inherit;
+    }
+}
+
+@media (min-width: 576px) { 
+@import url(style.css);
+}
+
+
+@media (min-width: 768px) {
+@import url(style.css);
+}
+
+
+@media (min-width: 992px) {
+@import url(style.css);
+}
+
+
+@media (min-width: 1200px) {
+    @import url(style.css);
+    .alinha-card-imoveis { padding-left: 4em;padding-bottom: 3em;margin-right: 14em;}
+}
+
+
+    
+
+@media (min-width: 1800px) {
+    @import url(style.css);
+    .form-inline {padding-left: 40em;}
+}
+
+@media (max-width: 575.98px) { 
+    @import url(style.css);
+ .footer-bottom {position: relative;}
+    .jumbotron {display: none;}
+    #AnuncieSemPagarNada {margin-top: 2em;}
+    #reset{display: unset;}
+    #padddingleft0{padding-left: 0;!important}
+    h1{font-size: 25px;}
+    .form-inline {padding-left: 0;}
+    .alinha-cards-imoveis{ padding-left: 1em;}
+    .button2 {display: inline-block;box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);cursor: pointer;transition: all ease-in-out 200ms;}
+    .button2:hover {box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);transform:none;}
+    
+}
+
+
+@media (max-width: 767.98px) {
+@import url(style.css);
+}
+
+
+@media (max-width: 991.98px) {
+@import url(style.css);
+}
+
+
+@media (max-width: 1600px) {
+    .button2 {display: inline-block;box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);cursor: pointer;transition: all ease-in-out 200ms;margin-right: 0em;margin-left: 17em;}
+    .button2:hover {box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);transform:none;}
+    .alinhamento{margin-left: 0em;}
+    .form-left{display: block;margin-left: 20em;}
+   
+}
+

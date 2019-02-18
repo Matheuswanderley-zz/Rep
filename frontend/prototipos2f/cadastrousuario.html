@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Alugue Agora</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+
+</head>
+
+
+<body>
+    <div id="banner">
+    <div class="container-fluid header-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #006400;height:  37px;">
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav" style=" margin-right: -62px;">
+                    <li class="nav-item dropdown" style="color: white;height:  37px;margin-left: 20px;font-family: 'Open Sans', sans-serif;">
+                        <a class="nav-link dropdown-toggle" style="padding-right:  1em;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user" aria-hidden="true" style="color: white"></i>
+                                                    Dicas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-check" aria-hidden="true"></i>&nbsp; Conheça nosso site</a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-money" aria-hidden="true"></i>&nbsp; Como ganhar um dinheiro extra</a>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown" style="margin-left: 20px;height:  37px;">
+                        <a class="nav-link dropdown-toggle" style="padding-right:  1em;" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-question-circle" aria-hidden="true" style="color: white"></i>
+                            Não encontrou o que procura?
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-check" aria-hidden="true"></i>&nbsp; Faça uma proposta</a>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown" style="margin-left: 20px;height:  37px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user" aria-hidden="true" style="color: white"></i>
+                            Seja um associado Black                          
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-check" aria-hidden="true"></i>&nbsp; Benefícios</a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-user" aria-hidden="true"></i>&nbsp; Para corretores</a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-building" aria-hidden="true"></i>&nbsp; Para imobiliárias</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp; Perguntas frequentes</a>
+                        </div>
+                    </li>
+
+
+            </ul>
+
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-nav-pesquisa" style="margin-left: -22px;">
+            <ul style="margin-left: -57px;
+                        margin-right: 0px;
+                        margin-top: 15px;">
+                <li class="nav-item" id="paddingleft0">
+                        <form class="form-inline my-2 my-lg-0 form-left " style="float: right">
+                            <input class="form-control mr-sm-2 col-10 " type="search" placeholder="Pesquise por Endereço ou Código do Imóvel" aria-label="Search" style="margin-bottom: 2px;font-size: 11px;line-height: 10px;width: 262px;">
+                            <button class="btn btn-lupa" type="submit"><i class="fa fa-search" aria-hidden="true" style="color:white"></i></button>
+                        </form>
+
+                    </li>
+            </ul>
+        </div>
+    </nav>
+
+</div>
+
+    <header style="text-align: center;margin: 1em;padding: o.5em;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1> Coloque todos seus dados para se cadastrar</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="central" style="margin-left: 1em;padding: 5em;text-align: center">
+        <div class="container" style="width: 60%">
+            <div class="row centralizar">
+                <form class="needs-validation" novalidate>
+                    <div class="col-sm-12 col-md-12">
+                       <div class="form-row">
+                        <div class="col-md-4">
+                            <label for="validationCustom01">Nome completo</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Nome Compeleto" required>
+                            <div class="invalid-feedback">
+                                Coloque seu nome completo!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom02">CPF</label>
+                            <input type="number" class="form-control" id="validationCustom02" placeholder="CPF" required>
+                            <div class="invalid-feedback">
+                                Coloque seu CPF
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="padding: 1em;top: -1rem;">
+                            <label for="validationCustom03">Data de nascimento</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        
+                        <div class="col-md-4" style="padding: 1em">
+                            <label for="validationCustom04">Coloque seu endereço</label>
+                            <input type="text" class="form-control" id="validationCustom04" placeholder="Rua, Av. e ou numero" required>
+                            <div class="invalid-feedback">
+                                Coloque seu endereço completo!
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="padding: 1em">
+                            <label for="validationCustom09">Coloque se bairro</label>
+                            <input type="text" class="form-control" id="validationCustom04" placeholder="Bairro em que reside" required>
+                            <div class="invalid-feedback">
+                                Coloque seu Bairro
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="padding: 1em">
+                            <label for="validationCustom05">Coloque seu CEP</label>
+                            <input type="text" class="form-control" id="validationCustom05" placeholder="CEP da sua residencia" required>
+                            <div class="invalid-feedback">
+                                Coloque seu cep corretamente!
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="padding: 1em">
+                            <label for="validationCustom05">Senha</label>
+                            <input type="text" class="form-control" id="validationCustom05" placeholder="Coloque sua senha" required>
+                            <div class="invalid-feedback">
+                                Coloque sua senha!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Aceito os termos e condições
+                              </label>
+                            <div class="invalid-feedback">
+                                Você deve aceitar os termos!
+                            </div>
+                        </div>
+                         <button class="btn btn-primary button2 mb-3" type="submit" style="margin-right: 20em;background-color: #A9A9A9;margin: 1em">Cadastrar</button>
+                    </div>
+                   
+                </form>
+                </div>
+            </div>
+            </div>
+    </section>
+
+
+    <footer class="footer" style="margin-top: 2.7em;">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" style="color: #fff;">
+                        <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp; Fale Conosco</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login" style="color: #fff;">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>&nbsp; Acesse sua conta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff;">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp; Perguntas frequentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff;">
+                        <i class="fa fa-flag" aria-hidden="true"></i>&nbsp; Envie sua proposta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastroimoveis.html" style="color: #fff;">
+                        <i class="fa fa-home" aria-hidden="true"></i>&nbsp; Publique seu imovél</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff;">
+                        <i class="fa fa-user" aria-hidden="true"></i>&nbsp; seja um associado black</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff;">Redes sociais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff;">
+                        <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff;">
+                        <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff;">
+                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #fff">
+                        <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+    </script>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+        }
+
+    </script>
+
+
+    <script src="https://unpkg.com/popper.js"></script>
+    <script src="https://use.fontawesome.com/f8d4eea0a8.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

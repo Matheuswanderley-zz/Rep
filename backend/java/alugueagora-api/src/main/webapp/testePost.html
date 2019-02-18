@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Enviar</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	
+	var currentdate = new Date(); 
+    var datetime = currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " @ "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+	
+	var imovelJson = {"anuncio": 0, "anuncioDestaque": 0, "areaImovel": 0, "celular": 0, "codigoCliente": 0, "codigoImovel": 0, "dataRegistro": "2018-01-09T17:28:13.450Z", "descricaoImovel": "teste "+datetime, "tituloImovel":"teste titulo imovel","disponibilidade": 0, "email": "silvio.cicoti@a2f.com.br", "envioPlaca": 0, "imovelAreaComum": [   {  "codigoImovel": 0,  "codigoareacomum": 0,  "codigoimovelareacomum": 0,  "valor": 0   } ], "imovelCaracteristicas": [   {  "codigoImovel": 0,  "codigocaracteristicas": 0,  "codigoimovelcaracteristicas": 0,  "valor": 0   } ], "imovelEnderecos": [   {  "bairro": "string",  "cep": 0,  "cidade": "string",  "codigoImovel": 0,  "codigoendereco": 0,  "complemento": "string",  "estado": "string",  "logradouro": "string",  "numero": 0,  "pais": "string",  "regiao": "string", "tipoEndereco": 0,  "tipologradouro": "string"   } ], "imovelFotos": [   {  "codigoImovel": 0,  "codigofoto": 0,  "foto": "string"   } ], "imovelNegocio": {   "codigoImovelNegocio": 0,   "negocioCodigoNegocio": 0 }, "imovelPagamentos": [   {  "codigoImovel": 0,  "codigopagamento": 0,  "datapagamento": "2018-01-09T17:28:13.450Z",  "statuspagamento": 0,  "valorpagamento": 0   } ], "imovelPlaca": {   "codigoplaca": 0,   "qrcode": "string" }, "imovelTipo": {   "codigoImovelTipo": 0,  "codigoTipo": 0 }, "oportunidade": 0, "preferido": 0, "quantidadeBanheiros": 0, "quantidadeDormitorios": 0, "quantidadeGaragem": 0, "telefone1": 0, "telefone2": 0, "valorCondominio": 0, "valorImovel": 0, "valorIptu": 0, "valorPacote": 0}; 
+
+	$.ajax({
+	    url : "http://apidev.a2f.com.br:8082/AlugueAgoraBackEnd-0.0.1-SNAPSHOT/imovel/",
+		//url : "http://localhost:8080/imovel/imovel/",
+		type: "POST",
+		data: JSON.stringify(imovelJson),
+		dataType: "json",
+		contentType: "application/json",
+		}).then(function(data) {
+			 $('.imovel').append(data.codigoImovel);
+		});
+});
+
+</script>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>
+                <label>Gravar</label>
+                <div>
+                	<p class="imovel">Imovel: </p>
+                </div>
+           </td>
+        </tr>
+    </table>
+</form>
+</body> 
+</html>

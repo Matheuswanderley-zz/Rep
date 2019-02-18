@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C801F803-65B1-ECBF-C3E1-AC3F42A28925" containerWithKeyObject="5BF02C43-D918-6D39-E62E-1EE7243927AC" localFKIndex="693218E4-0EBF-9693-BFF2-96C94D3CA1FD" name="CLIENTE_LOGIN_ACESSO_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 01:26:54 UTC</createdTime>
+<generatorID>BFF88B3D-E4F2-4B6D-8AEF-5969EC20F9AF</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<referredTableLongName>ACESSO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BEE4E453-5B03-3116-3EE6-0B636609AF68</referredTableID>
+<keyObject>8582CF56-1447-DC93-BD4E-D30F147F2711</keyObject>
+<referredKeyID>8582CF56-1447-DC93-BD4E-D30F147F2711</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoAcesso</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="20505C71-19E7-A4C1-FBE2-E7DC27995FC1" name="IMOVEL_CARACTERISTICAS">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-13 00:41:55 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigoImovelCaracteristicas" id="A7776A0B-72DF-E5A4-2199-71EC577AA392">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-13 00:42:26 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor" id="92409569-E3F1-2FBB-D701-EAF2F2749BC8">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-15 06:00:33 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoImovel" id="9EDD5DDE-B9FE-0709-B924-EFD45D5D84CF">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:19:10 UTC</createdTime>
+<generatorID>CCA7F5B3-ED9F-6ADB-40D0-3479C3EF6833</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<referedAttribute>BF34F1D8-0C96-91D4-37C9-D8EE86D4701B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoCaracteristicas" id="ECE524E7-BA6A-A1B3-8C96-A295E6778F23">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-21 01:25:56 UTC</createdTime>
+<generatorID>3622060D-B74C-F494-1B8F-3984E20A73A0</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<referedAttribute>FDB35F85-2AE7-6B50-C62B-A0D59907B995</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DC92324A-80EC-10D1-CED9-EFC99C65B697" name="IMOVEL_CARACTERISTICAS PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-13 05:33:20 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A7776A0B-72DF-E5A4-2199-71EC577AA392</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

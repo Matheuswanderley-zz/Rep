@@ -1,0 +1,156 @@
+<section class="container proposta content-pages">
+
+  <div id="modal-retorno" class="modal" style="height: 26% !important;">
+    <div class="modal-content">
+      <div class="row">
+        <div class="input-field col s12">
+          <p>Sua proposta foi enviada com sucesso. Em breve ela ficará disponível para consulta de nossos corretores.</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="modal-action modal-close waves-effect waves-green btn">OK</button>
+    </div>
+  </div>
+
+
+
+    <div>
+
+      <div class="row">
+        <div class="col s12">
+          <h2 class="title">Informe a milhares de associados o imóvel que você procura</h2>
+          <strong class="sub">Qual é a sua proposta?</strong>
+          <div class="input-field col s12 m3">
+            <div class="vender-alugar">
+              <button class="waves-effect waves-light btn active" [ngClass]="{'active': tipoAnuncio=='comprar' || tipoAnuncio=='init'}" id="comprar" name="comprar" (click)="tipoAnuncio = 'comprar'">Quero comprar</button>
+              <button class="waves-effect waves-light btn active" [ngClass]="{'active': tipoAnuncio=='alugar' || tipoAnuncio=='init'}" id="alugar" name="alugar" (click)="tipoAnuncio = 'alugar'">Quero alugar</button>
+
+            </div>
+          </div>
+          <div class="input-field col s12 m4">
+            <select name="tipoim" [(ngModel)]="tipoim">
+              <option value="" disabled selected>Tipo do Imóvel</option>
+              <option value="Casa">Casa</option>
+              <option value="Apartamento">Apartamento</option>
+              <option value="Lote">Lote</option>
+            </select>
+          </div>
+
+
+
+          <div class="input-field col s12 m5">
+            <input id="detalhes" type="text" class="validate" [(ngModel)]="detalhes" name="permuta">
+            <label for="detalhes">Coloque maiores detalhes de sua proposta aqui</label>
+          </div>
+
+          <div class="input-field col s12 m4">
+            <input id="valor" type="text" class="validate" [(ngModel)]="valor" name="valor">
+            <label for="valor">Qual valor gostaria de pagar?</label>
+          </div>
+
+          <div class="input-field col s12 m5">
+            <input id="permuta" type="text" class="validate" [(ngModel)]="permuta" name="permuta">
+            <label for="permuta">Tem imóvel para permuta? Coloque o código do seu imóvel aqui</label>
+          </div>
+
+        </div>
+
+        <div class="col s12">
+
+          <strong class="sub" style="margin-bottom: 13px;">Endereço</strong>
+
+          <div class="row">
+            <div class="input-field col s12 m8">
+              <input id="rua" type="text"
+                     name="endereco"
+                     [(ngModel)]="endereco"
+              >
+              <label for="rua">Rua/Av</label>
+            </div>
+
+            <div class="input-field col s12 m2">
+              <input id="numero" type="text"
+                     name="numero"
+                     [(ngModel)]="numero">
+              <label for="numero">Número</label>
+            </div>
+
+            <div class="input-field col s12 m2">
+              <input id="complemento" type="text"
+                     name="complemento"
+                     [(ngModel)]="complemento">
+              <label for="complemento">Complemento</label>
+            </div>
+
+            <div class="input-field col s12 m5">
+              <input id="cidade" type="text"
+                     name="cidade"
+                     [(ngModel)]="cidade">
+              <label for="cidade">Cidade</label>
+            </div>
+
+            <div class="input-field col s12 m4">
+              <input id="bairro" type="text"
+                     name="bairro"
+                     [(ngModel)]="bairro">
+              <label for="bairro">Bairro</label>
+            </div>
+
+            <div class="input-field col s12 m3">
+              <input id="cep" type="text"
+                     name="cep"
+                     [(ngModel)]="cep">
+              <label for="cep">CEP</label>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <strong class="sub">Especificações</strong>
+
+      <div class="row">
+
+        <div class=" col s12">
+          <div class="input-field col s12 m2 estrutura">
+            <i class="fa fa-bed material-icons prefix" aria-hidden="true"></i>
+            <div class="number-picker noselect" [(ngModel)]="quartos" name="quartos"></div>
+            <label for="quartos">Quartos</label>
+          </div>
+
+          <div class="input-field col s12 m2 estrutura">
+            <i class="fa fa-bath material-icons prefix" aria-hidden="true"></i>
+            <div class="number-picker noselect" [(ngModel)]="suites" name="suites"></div>
+            <label for="suites">Suítes</label>
+          </div>
+
+          <div class="input-field col s12 m2 estrutura">
+            <i class="fa fa-shower material-icons prefix" aria-hidden="true"></i>
+            <div class="number-picker noselect" [(ngModel)]="banheiros" name="banheiros"></div>
+            <label for="banheiros">Banheiros</label>
+          </div>
+
+          <div class="input-field col s12 m2 estrutura">
+            <i class="fa fa-car material-icons prefix" aria-hidden="true"></i>
+            <div class="number-picker noselect" [(ngModel)]="vagas" name="vagas"></div>
+            <label for="vagas">Vagas</label>
+          </div>
+
+          <div class="input-field col s12 m4">
+            <p><a class="waves-effect waves-light btn-large btn-send right modal-trigger" data-target="modal-retorno" style="margin-top: 20px;"><i class="material-icons left">arrow_forward</i>Prosseguir</a></p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+</section>

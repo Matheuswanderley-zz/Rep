@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600");
+.icons-sprite, .icons-call-content, .call .box:after, .icons-call, .call .icon, .icons-dormitory-filter, .filters .dormitory:before, .icons-dormitory, .imoveis .list .infos p > span.dormitory, .icons-local-filter, .filters .local:before, .icons-local, .imoveis .list .infos p > span.local, .icons-logo, .header h1, .icons-m-filter, .filters .m:before, .icons-m, .imoveis .list .infos p > span.m, .icons-point, .icons-s, .filters .buy:before, .icons-tri, .filters ul li:after, .icons-type-filter, .filters .type:before, .icons-type, .imoveis .list .infos p > span.type, .icons-value-filter, .filters .value:before, .icons-zap, .imoveis .list .last .send:before {
+  background-image: url('../assets/images/icons-s05bcf9210a.png');
+  background-repeat: no-repeat;
+}
+
+.icons-call-content, .call .box:after {
+  background-position: 0 0;
+  height: 264px;
+  width: 472px;
+}
+
+.icons-call, .call .icon {
+  background-position: 0 -264px;
+  height: 164px;
+  width: 164px;
+}
+
+.icons-dormitory-filter, .filters .dormitory:before {
+  background-position: 0 -428px;
+  height: 19px;
+  width: 31px;
+}
+
+.icons-dormitory, .imoveis .list .infos p > span.dormitory {
+  background-position: 0 -447px;
+  height: 19px;
+  width: 31px;
+}
+
+.icons-local-filter, .filters .local:before {
+  background-position: 0 -466px;
+  height: 25px;
+  width: 17px;
+}
+
+.icons-local, .imoveis .list .infos p > span.local {
+  background-position: 0 -491px;
+  height: 25px;
+  width: 17px;
+}
+
+.icons-logo, .header h1 {
+  background-position: 0 -516px;
+  height: 280px;
+  width: 251px;
+}
+
+.icons-m-filter, .filters .m:before {
+  background-position: 0 -796px;
+  height: 20px;
+  width: 19px;
+}
+
+.icons-m, .imoveis .list .infos p > span.m {
+  background-position: 0 -816px;
+  height: 20px;
+  width: 19px;
+}
+
+.icons-point {
+  background-position: 0 -836px;
+  height: 1px;
+  width: 1px;
+}
+
+.icons-s, .filters .buy:before {
+  background-position: 0 -837px;
+  height: 23px;
+  width: 24px;
+}
+
+.icons-tri, .filters ul li:after {
+  background-position: 0 -860px;
+  height: 11px;
+  width: 20px;
+}
+
+.icons-type-filter, .filters .type:before {
+  background-position: 0 -871px;
+  height: 20px;
+  width: 25px;
+}
+
+.icons-type, .imoveis .list .infos p > span.type {
+  background-position: 0 -891px;
+  height: 20px;
+  width: 25px;
+}
+
+.icons-value-filter, .filters .value:before {
+  background-position: 0 -911px;
+  height: 21px;
+  width: 10px;
+}
+
+.icons-zap, .imoveis .list .last .send:before {
+  background-position: 0 -932px;
+  height: 47px;
+  width: 47px;
+}

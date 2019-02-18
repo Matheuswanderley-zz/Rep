@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BEE4E453-5B03-3116-3EE6-0B636609AF68" name="ACESSO">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>612C0BD1-AAE7-0517-E2A8-3EDD4CA5D068</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoAcesso" id="C20C51CE-7B17-806E-222F-600E4F332B6F">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>FFE86983-9033-ADB7-685A-CD29B268D287</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipoAcesso" id="4F822A5A-49A9-911E-3113-8FA67C69FC1A">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>5DB7E4F7-C174-E951-5A1A-7B1E0F5434F0</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8582CF56-1447-DC93-BD4E-D30F147F2711" name="ACESSO_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-18 14:40:46 UTC</createdTime>
+<generatorID>4BC19F17-E25B-8AF2-18A0-906DB968E5A0</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C20C51CE-7B17-806E-222F-600E4F332B6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26669E71-569A-AA45-1758-799A5A2BD595" name="ACESSO__IDX">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:20:52 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>710624FC-8914-C875-1303-C49CDF061506</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="C20C51CE-7B17-806E-222F-600E4F332B6F"/>
+<colUsage columnID="4F822A5A-49A9-911E-3113-8FA67C69FC1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

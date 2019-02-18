@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Imobiliaria</title>
+  <base href="/">
+
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="assets/js/nouislider/nouislider.min.css">-->
+
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9RRxmP54H_2XcYs1thuXRqPoJZVhNGhU&callback=initMap">
+  </script>
+
+  <script>
+    function initMap() {
+
+      try {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: {lat: -23.693910, lng: -46.194312}
+        });
+
+        // Create an array of alphabetical characters used to label the markers.
+        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        // Add some markers to the map.
+        // Note: The code uses the JavaScript Array.prototype.map() method to
+        // create an array of markers based on a given "locations" array.
+        // The map() method here has nothing to do with the Google Maps API.
+        var markers = locations.map(function (location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+
+        // Add a marker clusterer to manage the markers.
+        var markerCluster = new MarkerClusterer(map, markers,
+          {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      } catch(e){}
+    }
+    var locations = [
+      {lat: -23.563910, lng: -46.154312},
+      {lat: -23.718234, lng: -46.363181},
+      {lat: -23.727111, lng: -46.371124},
+      {lat: -23.848588, lng: -46.209834},
+      {lat: -23.851702, lng: -46.216968},
+      {lat: -23.671264, lng: -46.863657},
+      {lat: -23.304724, lng: -46.662905},
+      {lat: -23.817685, lng: -46.699196},
+      {lat: -23.828611, lng: -46.790222},
+      {lat: -23.750000, lng: -46.116667},
+      {lat: -23.759859, lng: -46.128708},
+      {lat: -23.765015, lng: -46.133858},
+      {lat: -23.770104, lng: -46.143299},
+      {lat: -23.773700, lng: -46.145187},
+      {lat: -23.774785, lng: -46.137978},
+      {lat: -23.819616, lng: -46.968119},
+      {lat: -23.330766, lng: -46.695692},
+      {lat: -23.927193, lng: -46.053218},
+      {lat: -23.330162, lng: -46.865694},
+      {lat: -23.734358, lng: -46.439506},
+      {lat: -23.734358, lng: -46.501315},
+      {lat: -23.735258, lng: -46.438000},
+      {lat: -23.999792, lng: -46.463352}
+    ];
+  </script>
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root>Loading...</app-root>
+</body>
+</html>

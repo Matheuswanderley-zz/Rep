@@ -1,0 +1,232 @@
+<div id="map"></div>
+<div class="sticky-anchor"></div>
+<section class="filters sticky" style="height: 140px;">
+
+  <form>
+
+    <div class="container">
+
+      <div class="row busca-default">
+
+        <div class="col s12 m"><h2>Busque <br>seu imóvel</h2></div>
+        <div class="col s12 m">
+          <small>Tipo de Imóvel:</small>
+          <select
+            class="browser-default"
+            name="tipo" id="selectTipo"
+            [(ngModel)]="tipo">
+            <option value="Apartamento">Apartamento</option>
+            <option value="Casa">Casa</option>
+            <option value="Terreno">Terreno</option>
+          </select>
+        </div>
+
+        <div class="col s12 m">
+          <div class="comprar-alugar">
+            <small>Para:</small>
+            <p>
+              <button class="waves-effect waves-light btn btn-small para active"
+                      id="comprar" [ngClass]="{'active': tipoAnuncio=='comprar'}" (click)="tipoAnuncio = 'comprar'"
+                      name="comprar">Comprar</button>
+            </p>
+            <p>
+              <button class="waves-effect waves-light btn para btn-small"
+                      id="alugar" [ngClass]="{'active': tipoAnuncio=='alugar'}" (click)="tipoAnuncio = 'alugar'"
+                      name="alugar">Alugar</button>
+            </p>
+          </div>
+        </div>
+        <div class="col s12 m">
+          <small>Onde?</small>
+          <i class="fa fa-map-marker fa-1 prefix onde-icon" aria-hidden="true"></i>
+          <input type="text" class="autocomplete" class="browser-default onde" name="onde" id="onde" [(ngModel)]="onde">
+        </div>
+        <div class="col s12 m btn-search-interna">
+          <!--<a href="" class="waves-effect waves-light btn bt-search" routerLink="/login"><i class="material-icons prefix">search</i></a>-->
+          <a routerLink="/busca" [queryParams]="{tipo:teste}" class="waves-effect waves-light btn-flat bt-search "><i class="material-icons prefix">search</i></a>
+        </div>
+
+
+
+        <div class="row busca-avancada">
+
+          <div class="col s12 m">
+            <i class="fa fa-bed fa-1" aria-hidden="true"></i>
+            <select class="browser-default" name="quartos" >
+              <option disabled selected value="Quartos">Quartos</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">4</option>
+            </select>
+          </div>
+
+          <div class="col s12 m">
+            <i class="fa fa-bath fa-1" aria-hidden="true"></i>
+            <select class="browser-default" name="suites" >
+              <option disabled selected value="Suítes">Suítes</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">4</option>
+            </select>
+          </div>
+
+          <div class="col s12 m">
+            <i class="fa fa-shower fa-1" aria-hidden="true"></i>
+            <select class="browser-default" name="banheiros" >
+              <option disabled selected value="Banheiros">Banheiros</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">4</option>
+            </select>
+          </div>
+
+          <div class="col s12 m">
+            <i class="fa fa-car fa-1" aria-hidden="true"></i>
+            <select class="browser-default" name="vagas" >
+              <option disabled selected value="Vagas">Vagas</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">4</option>
+            </select>
+          </div>
+
+          <div class="col s12 m">
+            <i class="fa fa-usd fa-1" aria-hidden="true"></i>
+            <p class="range-field-mod">
+              <input type="text" value="R$ " class="browser-default range-text" />
+              <input type="range" id="test5" min="0" max="100" />
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </form>
+
+</section>
+
+<section class="imoveis">
+
+  <div class="container">
+
+    <h2>Resultados encontrados</h2>
+
+    <div *ngFor="let imovel of list; let i = index">
+
+      <div class="container">
+
+        <div class="list" (click)="window.location = '/anuncie'">
+
+          <div class="row">
+
+            <div class="col s12 m3 l3 img">
+              <img src="https://loremflickr.com/330/330/house/?lock={{i}}" alt="">
+            </div>
+
+            <div class="col s12 m6 l6">
+
+              <h3><a href="/detalhes">{{imovel.tituloImovel}}</a></h3>
+              <p>{{imovel.imovelEnderecos.logradouro}}, {{imovel.imovelEnderecos.numero}}</p>
+
+              <div class="infos">
+
+                <p>
+                  <i class="fa fa-map-marker fa-2" aria-hidden="true"></i><span>{{imovel.imovelEnderecos.bairro}}</span>
+                  <i class="fa fa-home fa-2" aria-hidden="true"></i><span>Apartamento</span>
+                  <span class="iptu">
+                      <span class="bold">IPTU:</span> {{imovel.valorIptu}}</span>
+                </p>
+
+                <p>
+                  <i class="fa fa-expand fa-2" aria-hidden="true"></i><span> {{imovel.areaImovel}}</span>
+                  <i class="fa fa-bed fa-2" aria-hidden="true"></i><span>{{imovel.quantidadeDormitorios}}</span>
+                  <span>Condomínio:</span> {{imovel.valorCondominio}}
+                </p>
+
+              </div>
+
+              <div class="contact">
+                <p>
+                  <strong>CONTATO:</strong><br>
+                  Nome: Giuseppe Gozzi<br>
+                  Email: giuseppe[FAÇA SUA PROPOSTA PARA VER]<br>
+                </p>
+              </div>
+
+            </div>
+
+            <div class="col s12 m3 l3 last">
+              <div class="social">
+                <a class="tooltip"><i class="fa fa-heart fa-2" aria-hidden="true"></i><span class="tooltiptext">Marcar como favorito</span></a>
+                <a class="tooltip"><i class="fa fa-share fa-2" aria-hidden="true"></i><span class="tooltiptext">Compartilhar</span></a>
+              </div>
+              <p>
+                <strong class="price">R$ {{imovel.imovelPagamentos.valorpagamento}}</strong>
+                <a href="" class="waves-effect waves-light btn cinza"><i class="fa fa-phone" aria-hidden="true"></i>(11) 99584-****</a>
+                <a href=""  class="waves-effect waves-light btn whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i>Whatsapp</a>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="ads" *ngIf="(i+1)%5 == 0">
+
+        <div class="row">
+
+          <div class="col xs12 m4">
+            <div class="imovel-destaque row">
+              <div class="col img">
+                <img src="https://imagens.zapcorp.com.br/vitrineb2c/28-09-2016%20170004_grande.jpg" alt="">
+              </div>
+              <div class="col text">
+                <p class="titulo">Título do imóvel em destaque</p>
+                <p class="descrição">Descrição do imóvel em destaque. Descrição do imóvel em destaque. Descrição do imóvel em destaque</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col xs12 m4">
+            <div class="imovel-destaque row">
+              <div class="col img">
+                <img src="https://imagens.zapcorp.com.br/vitrineb2c/28-09-2016%20170004_grande.jpg" alt="">
+              </div>
+              <div class="col text">
+                <p class="titulo">Título do imóvel em destaque</p>
+                <p class="descrição">Descrição do imóvel em destaque. Descrição do imóvel em destaque. Descrição do imóvel em destaque</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col xs12 m4">
+            <div class="imovel-destaque row">
+              <div class="col img">
+                <img src="https://imagens.zapcorp.com.br/vitrineb2c/28-09-2016%20170004_grande.jpg" alt="">
+              </div>
+              <div class="col text">
+                <p class="titulo">Título do imóvel em destaque</p>
+                <p class="descrição">Descrição do imóvel em destaque. Descrição do imóvel em destaque. Descrição do imóvel em destaque</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

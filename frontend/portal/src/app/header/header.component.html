@@ -1,0 +1,62 @@
+<header class="header">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col m">
+        <ul>
+          <li><a href="/" class="logo-peq"><img src="assets/images/logo_peq.png"></a><button class="btn-menu waves-effect waves-light" (click)="clicked($event)"><i class="material-icons prefix">menu</i>Menu</button></li>
+          <li>
+            <ul class="menu sub">
+              <li><a href="/login?from=account" class="btn-submenu waves-effect waves-light"><i class="fa fa-user fa-3" aria-hidden="true"></i>Acesse sua conta</a></li>
+              <li><a href="/busca" class="btn-submenu waves-effect waves-light"><i class="fa fa-search fa-3" aria-hidden="true"></i>Busque imóveis</a></li>
+              <li><a href="/usuario/anuncios" class="btn-submenu waves-effect waves-light"><i class="fa fa-heart fa-3" aria-hidden="true"></i>Meus favoritos</a></li>
+              <li><a href="#" class="btn-submenu waves-effect waves-light"><i class="fa fa-lightbulb-o fa-3" aria-hidden="true"></i>Dicas de Navegação</a></li>
+              <li><a href="#" class="btn-submenu waves-effect waves-light btn-corretor-black"><img src="assets/images/icone_corretor_black.png"><p>Vire<br>Corretor Black</p></a></li>
+              <li><a href="/proposta?from=proposal" class="btn-submenu waves-effect waves-light btn-red"><i class="fa fa-gavel fa-3 red-text" aria-hidden="true" style="margin-bottom: 15px;"></i>Faça sua proposta</a></li>
+              <li><a href="#" class="btn-submenu waves-effect waves-light btn-red"><i class="fa fa-home fa-3 red-text" aria-hidden="true" style="margin-bottom: 8px;"></i>Para imobiliárias</a></li>
+              <li><a href="#" class="btn-submenu waves-effect waves-light  btn-red"><i class="fa fa-usd fa-3 red-text" aria-hidden="true"></i>Ganhe dinheiro extra</a></li>
+              <li class="double"><a href="/anuncie" class="btn-submenu waves-effect waves-light  btn-red"><i class="fa fa-bullhorn fa-3 red-text" aria-hidden="true" style="margin-bottom: 10px;"></i>Anuncie</a></li>
+
+
+            </ul>
+          </li>
+          <!--<li><h1 [routerLink]="['']">Compre, alugue seu imóvel</h1></li>-->
+        </ul>
+
+
+      </div>
+
+      <div class="col m search">
+        <i class="material-icons prefix">search</i>
+        <div class="estou-buscando">
+          <p>Estou buscando...</p>
+           <div class="submenu">
+                  <a href="/proposta" class="estou-buscando">Comprar</a>
+                  <a href="/proposta" class="estou-buscando">Alugar</a>
+                  <a href="/proposta" class="estou-buscando">Anunciar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col m acesse-conta">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="hide-on-med-and-down">
+              <li><a href="/login?from=account">Acesse sua Conta</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</header>
+
+
+

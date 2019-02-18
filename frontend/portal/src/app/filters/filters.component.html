@@ -1,0 +1,134 @@
+<div class="row infos">
+  <a href="/anuncie" class="middle waves-effect waves-light btn red"><i class="fa fa-bullhorn" aria-hidden="true"></i>Anuncie seu imóvel sem pagar nada</a>
+  <!--<div class="col s12 m4"><a class="white black-text waves-effect waves-light btn" href="/login">Clique e anuncie</a></div>-->
+</div>
+
+<div class="sticky-anchor"></div>
+<section class="filters sticky" [style.height]="!busca_avancada ? '70px' : '145px'">
+
+  <form #f="ngForm" (ngSubmit)="BuscarImovel(f.value)">
+
+    <div class="container">
+
+      <div class="row busca-default">
+
+        <div class="col s12 m"><h2>Busque <br>seu imóvel</h2></div>
+        <div class="col s12 m">
+          <i class="fa fa-home fa-1 tipo-icon" aria-hidden="true"></i>
+          <small>Tipo de Imóvel:</small>
+          <select
+            class="browser-default"
+            name="tipo" id="selectTipo"
+            [(ngModel)]="tipo">
+            <option value="Apartamento">Apartamento</option>
+            <option value="Casa">Casa</option>
+            <option value="Terreno">Terreno</option>
+          </select>
+        </div>
+
+        <div class="col s12 m">
+          <div class="comprar-alugar">
+            <small>Para:</small>
+            <p>
+              <span class="waves-effect waves-light btn btn-small para active"
+                id="comprar" [ngClass]="{'active': tipoAnuncio=='comprar'}" (click)="tipoAnuncio = 'comprar'"
+                name="comprar">Comprar</span>
+            </p>
+            <p>
+              <span class="waves-effect waves-light btn para btn-small"
+                      id="alugar" [ngClass]="{'active': tipoAnuncio=='alugar'}" (click)="tipoAnuncio = 'alugar'"
+                      name="alugar">Alugar</span>
+            </p>
+          </div>
+        </div>
+        <div class="col s12 m">
+
+          <small>Onde?</small>
+          <i class="fa fa-map-marker fa-1 prefix onde-icon" aria-hidden="true"></i>
+          <input type="text" class="autocomplete" class="browser-default onde" name="onde" id="onde" [(ngModel)]="onde">
+          <!--<select-->
+            <!--class="browser-default"-->
+            <!--name="onde" id="selectOnde"-->
+            <!--[(ngModel)]="onde">-->
+            <!--<option value="São Paulo">São Paulo</option>-->
+            <!--<option value="Curitiba">Curitiba</option>-->
+            <!--<option value="Florianópolis">Florianópolis</option>-->
+          <!--</select>-->
+        </div>
+        <div class="col s12 m">
+          <!--<a href="" class="waves-effect waves-light btn bt-search" routerLink="/login"><i class="material-icons prefix">search</i></a>-->
+          <a routerLink="/busca" [queryParams]="{tipo:teste}" class="waves-effect waves-light btn-flat bt-search"><i class="material-icons prefix">search</i></a>
+          <!--<a routerLink="/busca" [queryParams]="{tipo:teste}" class="waves-effect waves-light btn bt-search"><i class="material-icons prefix">search</i></a>-->
+          <!--<button class="waves-effect waves-light btn bt-search "><i class="material-icons prefix">search</i></button>-->
+
+        </div>
+
+        <div class="col s12 m float-right" style="margin-right: 0px;">
+          <span class="area-busca-avancada">
+            <small>Busca<br>avançada</small>
+            <a (click)="busca_avancada=!busca_avancada" class="waves-effect waves-light btn btn-floating bt-busca-avancada"><i class="fa fa-arrow-down" aria-hidden="true" [style.transform]="!busca_avancada ? 'rotate(0deg)' : 'rotate(180deg)'"></i></a>
+          </span>
+        </div>
+
+
+      <div class="row busca-avancada">
+
+        <div class="col s12 m">
+          <i class="fa fa-bed fa-1" aria-hidden="true"></i>
+          <select class="browser-default" name="quartos" >
+            <option disabled selected value="Quartos">Quartos</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">4</option>
+          </select>
+        </div>
+
+        <div class="col s12 m">
+          <i class="fa fa-bath fa-1" aria-hidden="true"></i>
+          <select class="browser-default" name="suites" >
+            <option disabled selected value="Suítes">Suítes</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">4</option>
+          </select>
+        </div>
+
+        <div class="col s12 m">
+          <i class="fa fa-shower fa-1" aria-hidden="true"></i>
+          <select class="browser-default" name="banheiros" >
+            <option disabled selected value="Banheiros">Banheiros</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">4</option>
+          </select>
+        </div>
+
+        <div class="col s12 m">
+          <i class="fa fa-car fa-1" aria-hidden="true"></i>
+          <select class="browser-default" name="vagas" >
+            <option disabled selected value="Vagas">Vagas</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">4</option>
+          </select>
+        </div>
+
+        <div class="col s12 m">
+          <i class="fa fa-usd fa-1" aria-hidden="true"></i>
+          <p class="range-field-mod">
+            <input type="text" value="R$ " class="browser-default range-text" />
+            <input type="range" id="test5" min="0" max="100" />
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+  </form>
+
+</section>

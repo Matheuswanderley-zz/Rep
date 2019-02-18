@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5A722F04-4B9C-1FD8-D347-59C64A051B5E" name="IMOVEL_FOTOS">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-13 00:57:25 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigoFoto" id="B41B8CE0-B48E-58A9-2450-04A84AA53175">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-13 01:00:35 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="foto" id="2ED293E2-8674-A2DC-CF0B-4A04874FF500">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-13 01:01:00 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoImovel" id="111F74B5-653D-EE01-8794-8E97BC4FDA70">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-20 13:06:25 UTC</createdTime>
+<generatorID>EF4D255C-BF3F-187E-77A5-9DEDE7FBD430</generatorID>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<referedAttribute>BF34F1D8-0C96-91D4-37C9-D8EE86D4701B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="97D440E7-3EA6-6652-50CD-436F54C2E6A5" name="IMOVEL_FOTOS PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2017-12-13 05:33:28 UTC</createdTime>
+<ownerDesignName>dataModeler_20122017</ownerDesignName>
+<engineerTo>
+<item key="C951A8B4-8A5C-BFA7-1A32-65133A4D1AAE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B41B8CE0-B48E-58A9-2450-04A84AA53175</attributeRef>
+<attributeRef>111F74B5-653D-EE01-8794-8E97BC4FDA70</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

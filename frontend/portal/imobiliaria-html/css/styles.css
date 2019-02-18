@@ -1,0 +1,648 @@
+@charset "UTF-8";
+/* ================================================================== *
+ * Author: Eder Silva
+ * E-mail: contato@edersilva.com
+ * Site: edersilva.com
+ * ================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600");
+.icons-sprite, .icons-call-content, .call .box:after, .icons-call, .call .icon, .icons-dormitory-filter, .filters .dormitory:before, .icons-dormitory, .imoveis .list .infos p > span.dormitory, .icons-local-filter, .filters .local:before, .icons-local, .imoveis .list .infos p > span.local, .icons-logo, .header h1, .icons-m-filter, .filters .m:before, .icons-m, .imoveis .list .infos p > span.m, .icons-point, .icons-s, .filters .buy:before, .icons-tri, .filters ul li:after, .icons-type-filter, .filters .type:before, .icons-type, .imoveis .list .infos p > span.type, .icons-value-filter, .filters .value:before, .icons-zap, .imoveis .list .last .send:before {
+  background-image: url('../assets/images/icons-s05bcf9210a.png');
+  background-repeat: no-repeat;
+}
+
+.icons-call-content, .call .box:after {
+  background-position: 0 0;
+  height: 264px;
+  width: 472px;
+}
+
+.icons-call, .call .icon {
+  background-position: 0 -264px;
+  height: 164px;
+  width: 164px;
+}
+
+.icons-dormitory-filter, .filters .dormitory:before {
+  background-position: 0 -428px;
+  height: 19px;
+  width: 31px;
+}
+
+.icons-dormitory, .imoveis .list .infos p > span.dormitory {
+  background-position: 0 -447px;
+  height: 19px;
+  width: 31px;
+}
+
+.icons-local-filter, .filters .local:before {
+  background-position: 0 -466px;
+  height: 25px;
+  width: 17px;
+}
+
+.icons-local, .imoveis .list .infos p > span.local {
+  background-position: 0 -491px;
+  height: 25px;
+  width: 17px;
+}
+
+.icons-logo, .header h1 {
+  background-position: 0 -516px;
+  height: 280px;
+  width: 251px;
+}
+
+.icons-m-filter, .filters .m:before {
+  background-position: 0 -796px;
+  height: 20px;
+  width: 19px;
+}
+
+.icons-m, .imoveis .list .infos p > span.m {
+  background-position: 0 -816px;
+  height: 20px;
+  width: 19px;
+}
+
+.icons-point {
+  background-position: 0 -836px;
+  height: 1px;
+  width: 1px;
+}
+
+.icons-s, .filters .buy:before {
+  background-position: 0 -837px;
+  height: 23px;
+  width: 24px;
+}
+
+.icons-tri, .filters ul li:after {
+  background-position: 0 -860px;
+  height: 11px;
+  width: 20px;
+}
+
+.icons-type-filter, .filters .type:before {
+  background-position: 0 -871px;
+  height: 20px;
+  width: 25px;
+}
+
+.icons-type, .imoveis .list .infos p > span.type {
+  background-position: 0 -891px;
+  height: 20px;
+  width: 25px;
+}
+
+.icons-value-filter, .filters .value:before {
+  background-position: 0 -911px;
+  height: 21px;
+  width: 10px;
+}
+
+.icons-zap, .imoveis .list .last .send:before {
+  background-position: 0 -932px;
+  height: 47px;
+  width: 47px;
+}
+
+/* ================================================================== *
+ * Fontes
+ * ================================================================== */
+/* Cores */
+/* ================================================================== *
+ * Grid
+ * ================================================================== */
+body {
+  font-size: 14px;
+  overflow-x: hidden;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/* ================================================================== *
+ * Container
+ * ================================================================== */
+.container {
+  width: 100%;
+  max-width: 1425px;
+}
+
+/* ================================================================== *
+ *  Header
+ * ================================================================== */
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+}
+.header h1 {
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  margin: 0;
+}
+.header nav {
+  background: none;
+  box-shadow: none;
+  padding-top: 10px;
+}
+.header nav ul li a {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+.header .btn {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: #006f57;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: none;
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 38px;
+  display: inline-block;
+  float: right;
+}
+
+/* ================================================================== *
+   * Banner Slider
+   * ================================================================== */
+.banner .carousel-item, .banner .carousel-slider {
+  height: 790px !important;
+}
+.banner .carousel-item img {
+  position: relative;
+  z-index: 1;
+}
+.banner .carousel-item .infos {
+  position: absolute;
+  z-index: 99;
+  bottom: 13%;
+  left: 0;
+  right: 0;
+  padding: 2% 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+.banner .carousel-item .infos .btn {
+  background: #006f57;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 3% 6% 10% 6%;
+}
+@media (min-width: 600px) {
+  .banner .carousel-item .infos .btn {
+    float: right;
+  }
+}
+.banner .carousel-item .infos .container {
+  position: relative;
+}
+.banner .carousel .indicators {
+  bottom: 5%;
+}
+.banner .carousel .indicators .indicator-item {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #006f57;
+}
+
+/* ================================================================== *
+ * Filters
+ * ================================================================== */
+.filters {
+  background: rgba(0, 111, 84, 0.7);
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-top: -67px;
+  position: relative;
+  z-index: 999;
+}
+.filters ul li {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  position: relative;
+  height: 50px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .filters ul li {
+    height: auto;
+  }
+}
+.filters ul li:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  position: absolute;
+  right: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.filters ul li:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  position: absolute;
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.filters ul li:hover .submenu {
+  display: block;
+}
+.filters .submenu {
+  margin-top: 35px;
+  display: none;
+}
+.filters .submenu li {
+  background: rgba(0, 111, 84, 0.8);
+}
+.filters .submenu li + li {
+  border-top: 1px solid #179555;
+}
+.filters .submenu li a {
+  color: #fff;
+  padding-left: 10%;
+}
+.filters .submenu li a:hover {
+  opacity: 0.5;
+}
+.filters .submenu li:after {
+  display: none;
+}
+.filters .buy {
+  background: #ec1116;
+  text-align: center;
+}
+.filters .buy:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  position: absolute;
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.filters .local:before, .filters .type:before, .filters .m:before, .filters .dormitory:before, .filters .value:before {
+  left: 35%;
+}
+.filters .local:after, .filters .type:after, .filters .m:after, .filters .dormitory:after, .filters .value:after {
+  right: 35%;
+}
+
+/* ================================================================== *
+ * Box
+ * ================================================================== */
+.boxs {
+  margin-top: 30px;
+}
+.boxs .box {
+  min-height: 470px;
+  background: url("../assets/images/bg-box.png") no-repeat;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 30px 3rem 0 3rem;
+}
+@media (max-width: 420px) {
+  .boxs .box {
+    font-size: 25px;
+  }
+}
+.boxs .box .btn {
+  background: #ec1116;
+  box-shadow: none;
+  font-size: 25px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  height: 53px;
+  display: block;
+}
+@media (max-width: 420px) {
+  .boxs .box .btn {
+    font-size: 18px;
+  }
+}
+.boxs .box h2 {
+  margin: 30px 0;
+  line-height: 40px;
+  font-size: 32px;
+  font-weight: 600;
+}
+.boxs .box h2 span {
+  display: block;
+}
+.boxs .box.client h2 {
+  margin: 56px 0;
+}
+.boxs .box.search h2 {
+  margin: 50px 0 28px 0;
+}
+.boxs .box.search img {
+  margin-top: 25px;
+}
+@media (max-width: 600px) {
+  .boxs {
+    padding: 20px;
+  }
+  .boxs .box {
+    padding-bottom: 30px;
+    background: #179555 none;
+  }
+  .boxs .box h2 {
+    font-size: 24px;
+  }
+  .boxs .box + .box {
+    margin-top: 20px;
+  }
+}
+
+/* ================================================================== *
+ * Imóveis
+ * ================================================================== */
+.imoveis h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+  margin: 0 0 35px 35px;
+  color: #4a4a4a;
+  font-weight: normal;
+}
+.imoveis .list {
+  padding: 15px 15px 0 15px;
+  background: #f0f0f0;
+  line-height: 33px;
+}
+.imoveis .list p, .imoveis .list h3 {
+  color: #4a4a4a;
+}
+.imoveis .list h3 {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.imoveis .list p {
+  font-size: 19px;
+}
+.imoveis .list .img img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 600px) {
+  .imoveis .list .img img {
+    width: 100%;
+  }
+}
+.imoveis .list .infos {
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+.imoveis .list .infos p > span {
+  position: relative;
+  padding-left: 30px;
+}
+.imoveis .list .infos p > span:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  position: absolute;
+  left: 0;
+}
+.imoveis .list .infos p > span.type {
+  margin-left: 15px;
+}
+.imoveis .list .infos p > span.dormitory {
+  margin: 0 0 0 45px;
+  padding-left: 45px;
+}
+@media (max-width: 600px) {
+  .imoveis .list .infos p > span {
+    display: block;
+    margin: 0 0 10px 0 !important;
+  }
+  .imoveis .list .infos p > span.iptu {
+    padding-left: 0;
+  }
+}
+.imoveis .list .infos .bold {
+  font-weight: bold;
+}
+.imoveis .list .contact strong {
+  font-weight: bold;
+}
+.imoveis .list .last {
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .imoveis .list .last {
+    position: relative;
+    min-height: 350px;
+  }
+  .imoveis .list .last p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    right: 10px;
+  }
+}
+.imoveis .list .last .price {
+  font-size: 50px;
+  display: block;
+}
+.imoveis .list .last .send {
+  background: rgba(237, 68, 73, 0.8);
+  color: #fff;
+  font-size: 23px;
+  text-transform: uppercase;
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+  padding-left: 50px;
+}
+@media (max-width: 600px) {
+  .imoveis .list .last .send {
+    font-size: 19px;
+  }
+}
+.imoveis .list .last .send:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  position: absolute;
+  left: 7%;
+  top: 13px;
+}
+
+/* ================================================================== *
+ * ADS
+ * ================================================================== */
+.ads {
+  background: #cdcdcd;
+  padding: 40px 0 10px 0;
+  margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  .ads .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .ads img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+ /* ================================================================== *
+* Footer
+* ================================================================== */
+.call {
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+  z-index: 9999;
+}
+.call .icon {
+  display: block;
+}
+.call .box {
+  position: absolute;
+  left: 0;
+  top: 50px;
+}
+.call .box .links {
+  font-size: 27px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  left: -330px;
+  top: -118px;
+  display: none;
+  width: 270px;
+  z-index: 999;
+}
+.call .box .links p {
+  line-height: 15px;
+  margin: 15px 0;
+}
+.call .box .links p strong {
+  display: block;
+}
+.call .box .links p a {
+  background: #008223;
+  color: #fff;
+  padding: 15px 25px;
+  display: inline-block;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.call .box .links p.last {
+  margin-left: -26px;
+}
+.call .box:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  position: absolute;
+  left: -425px;
+  top: -170px;
+  display: none;
+}
+.call:hover .box:after, .call:hover .links {
+  display: block;
+}
+
+.footer {
+  background: #179555;
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+}
+.footer .container {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.footer .container + .container {
+  padding-top: 0;
+}
+@media (max-width: 600px) {
+  .footer .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.footer a {
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer .copy {
+  font-size: 14px;
+  background: #4cae7c;
+  margin-bottom: 0;
+}
+.footer .copy p {
+  margin-top: 0;
+  padding-top: 0;
+}
+.footer .copy .row {
+  padding-bottom: 0;
+}
+.footer .copy .container {
+  padding: 30px 0 1px 0;
+}
+.footer .copy .container img {
+  margin-top: -5px;
+}
+@media (min-width: 600px) {
+  .footer .copy .container .selo img {
+    float: right;
+    margin-top: -15px;
+  }
+}
+.footer .copy .container .pay {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .footer .copy .container .pay img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ================================================================== *
+ * Header
+ * ================================================================== */
+/* ================================================================== *
+ * Footer
+ * ================================================================== */

@@ -1,0 +1,135 @@
+<section class="imoveis">
+
+  <div class="container">
+
+    <h2>Imóveis em destaque perto de você</h2>
+
+  </div>
+
+    <div *ngFor="let imovel of list.reverse(); let i = index">
+
+      <div class="container">
+
+        <div class="list">
+
+          <div class="row">
+
+            <div class="col s12 m3 l3 img">
+              <img src="https://loremflickr.com/330/330/house/?lock={{i}}" alt="">
+            </div>
+
+            <div class="col s12 m6 l6">
+
+              <h3><a href="/detalhes">{{imovel.tituloImovel}}</a></h3>
+              <p>{{imovel.imovelEnderecos.logradouro}}, {{imovel.imovelEnderecos.numero}}</p>
+
+              <div class="infos">
+                <p>
+                  <i class="fa fa-map-marker fa-2" aria-hidden="true"></i><span>{{imovel.imovelEnderecos.bairro}}</span>
+                  <i class="fa fa-home fa-2" aria-hidden="true"></i><span>Apartamento</span>
+                  <span class="iptu">
+                      <span class="bold">IPTU:</span> {{imovel.valorIptu}}</span>
+                </p>
+
+                <p>
+                  <i class="fa fa-expand fa-2" aria-hidden="true"></i><span> {{imovel.areaImovel}}</span>
+                  <i class="fa fa-bed fa-2" aria-hidden="true"></i><span>{{imovel.quantidadeDormitorios}}</span>
+                  <span>Condomínio:</span> {{imovel.valorCondominio}}
+                </p>
+
+              </div>
+
+              <div class="contact">
+                <p>
+                  <strong>CONTATO:</strong><br>
+                  Nome: Giuseppe Gozzi
+                </p>
+              </div>
+
+            </div>
+
+            <div class="col s12 m3 l3 last">
+              <div class="social">
+                <a class="tooltip"><i class="fa fa-heart fa-2" aria-hidden="true"></i><span class="tooltiptext">Marcar como favorito</span></a>
+                <a class="tooltip"><i class="fa fa-share fa-2" aria-hidden="true"></i><span class="tooltiptext">Compartilhar</span></a>
+              </div>
+              <p>
+
+                <strong class="price">R$ {{imovel.imovelPagamentos.valorpagamento}}</strong>
+                <a href="" class="waves-effect waves-light btn cinza"><i class="fa fa-phone" aria-hidden="true"></i>(11) 99584-****</a>
+                <a href=""  class="waves-effect waves-light btn whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i>Whatsapp</a>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="ads" *ngIf="(i+1)%5 == 0">
+
+        <div class="container">
+
+          <h2>Lançamentos</h2>
+
+        </div>
+
+        <div class="row lancamentos">
+          <div class="col xs12 m4">
+            <div class="imovel-destaque row">
+              <div class="col s7 img">
+                <img src="https://imagens.zapcorp.com.br/vitrineb2c/28-09-2016%20170004_grande.jpg" alt="">
+              </div>
+              <div class="col s5 text">
+                <div>
+                  <p class="titulo">Título do imóvel em destaque</p>
+                  <p class="descrição">Descrição do imóvel em destaque. </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col xs12 m4">
+            <div class="imovel-destaque row">
+              <div class="col s7 img">
+                <img src="https://imagens.zapcorp.com.br/vitrineb2c/28-09-2016%20170004_grande.jpg" alt="">
+              </div>
+              <div class="col s5 text">
+                <div>
+                  <p class="titulo">Título do imóvel em destaque</p>
+                  <p class="descrição">Descrição do imóvel em destaque. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col xs12 m4">
+            <div class="imovel-destaque row">
+              <div class="col s7 img">
+                <img src="https://imagens.zapcorp.com.br/vitrineb2c/28-09-2016%20170004_grande.jpg" alt="">
+              </div>
+              <div class="col s5 text">
+                <div>
+                  <p class="titulo">Título do imóvel em destaque</p>
+                  <p class="descrição">Descrição do imóvel em destaque. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+</section>
